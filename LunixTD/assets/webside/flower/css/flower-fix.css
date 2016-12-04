@@ -1,0 +1,67 @@
+@media only screen and (max-width:1270px) {
+    /*中部*/
+    .head,
+    .body-container,
+    nav,
+    footer .foot {
+        width: 996px;
+    }
+    /*box*/
+    .body-container .nav a {
+        font-size: 16px;
+    }
+    .panel-line .inline-box {
+        width: 245px;
+        height: 245px;
+    }
+    .panel-line .classify-box {
+        width: 245px;
+        height: 121px;
+    }
+    .panel-line .inline-box .face {
+        top: calc(50% - 50px);
+        left: calc(50% - 50px);
+        width: 100px;
+        height: 100px;
+    }
+    .panel-line .inline-box .fix {
+        margin-top: -30px;
+    }
+    /*小画板*/
+    .inline-box .info-mini h2 a {
+        font-size: 16px;
+    }
+    /*box分类标题的位置*/
+    .panel-line .classify-box .classify-title {
+        height: 31px;
+    }
+    .classify-title.board {
+        background-position: -140px 0;
+    }
+    .classify-title.board-right {
+        background-position: -88px 0;
+    }
+    .classify-title.person {
+        background-position: -88px -160px;
+    }
+    .classify-title.person-left {
+        background-position: -140px -160px;
+    }
+    .classify-title.taste {
+        background-position: -140px -80px;
+    }
+    .classify-title.taste-right {
+        background-position: -88px -80px;
+    }
+    .classify-box .text {
+        font-size: 16px;
+    }
+    .classify-box .info {
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+    .classify-box .from {
+        font-size: 12px;
+    }
+    /*尾部*/
+}

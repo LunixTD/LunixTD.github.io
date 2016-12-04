@@ -20,7 +20,6 @@ body {
     position: relative;
     font-family: "helvetica neue", arial, sans-serif;
     width: 100%;
-    height: 1200px;
     font-size: 14px;
     color: #333;
 }
@@ -234,7 +233,9 @@ header {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: url('../img/banner/banner-bg.jpg') center 0px no-repeat;
+    background-color: #333;
+    background-repeat: no-repeat;
+    background-position-x: center;
     background-size: cover;
     transition: opacity 200ms;
 }
@@ -504,7 +505,7 @@ a.search {
 
 /*box分类标题的位置*/
 
-.classify-title.borad {
+.classify-title.board {
     background-position: 0 0;
 }
 
@@ -611,7 +612,7 @@ a.search {
 }
 
 .panel-line .inline-box .mask-in {
-    transition: all 3s linear;
+    transition: all 2s linear;
     opacity: 1;
     background-size: 100%;
 }
