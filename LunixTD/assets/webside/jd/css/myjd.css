@@ -1,0 +1,193 @@
+* {
+    box-sizing: border-box;
+    -moz-user-select: none;
+}
+
+html,
+body {
+    width: 100vw;
+    max-width: 640px;
+    min-width: 320px;
+    margin: 0 auto;
+    background-color: #F3F5F7;
+}
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    color: black;
+}
+
+main .my-info{
+    position: relative;
+    overflow: hidden;
+}
+.my-info .head-img{
+    position: absolute;
+    overflow: hidden;
+}
+.my-info .head-img img{
+    width:100%;
+}
+.my-info .info{
+    position: relative;
+    z-index: 20;
+    margin:15px;
+    margin-top:0;
+    padding-top:15px;
+}
+.my-info .info .my-face{
+    display: inline-block;
+    width:60px;
+    height:60px;
+    border-radius: 50%;
+    border:2px solid #bca1ad;
+    overflow: hidden;
+    vertical-align: middle;
+}
+.my-info .info .my-face img{
+    width:100%;
+}
+.my-info .info .info-name{
+    display: inline-block;
+    vertical-align: middle;
+}
+.my-info .info .info-name p{
+    color:white;
+}
+.my-info .info .info-name p:nth-of-type(1){
+    font-size:17px;
+    line-height: 17px;
+    margin-bottom:6px;
+}
+.my-info .info .info-name p:nth-of-type(2){
+    font-size:13px;
+    line-height: 13px;
+}
+.my-info .info .info-more{
+    position: absolute;
+    bottom:0;
+    right:0;
+    font-size:11px;
+    color:#e3e5e9;
+}
+.my-info .info .info-more span:nth-of-type(2){
+    display: inline-block;
+    width:5px;
+    height:8px;
+    background:url(../images/my/info-more.png) 0 0 no-repeat;
+    background-size:5px 8px;
+    vertical-align: middle;
+    margin-left:3px;
+}
+
+.my-info .my-watch{
+    width:100%;
+    height:49px;
+    position: relative;
+    overflow: hidden;
+}
+.my-info .my-watch li{
+    width:calc((100% - 2px) / 3);
+    height:49px;
+    padding-top:9px;
+    background-color:rgba(0,0,0,0.2);
+    margin-left:1px;
+    float:left;
+}
+.my-info .my-watch a:first-child li{
+    margin-left:0;
+}
+.my-info .my-watch a li span{
+    text-align: center;
+    display: block;
+    color:white;
+}
+.my-info .my-watch .watch-goods{
+    font-size:14px;
+    margin-bottom:5px;
+}
+.my-info .my-watch .watch-shop{
+    font-size:11px;
+}
+
+.my-content-box{
+    margin-top:10px;
+}
+.my-content li{
+    display: block;
+    height:44px;
+    line-height: 44px;
+    background-color:white;
+    padding:0 10px;
+    font-size:14px;
+    overflow: hidden;
+}
+.my-content .title{
+    display: block;
+    overflow: hidden;
+}
+.my-content .title-l{
+    float:left;
+}
+.my-content .title-l img{
+    width:15px;
+    vertical-align: middle;
+    margin-right:10px;
+}
+.my-content .title-l span{
+    vertical-align: middle;
+    line-height: 16px;
+}
+.my-content .title-r{
+    float: right;
+}
+.my-content .title-r span{
+    color:#848689;
+    font-size:12px;
+    margin-right:3px;
+}
+.my-content .title-r .icon{
+    display: inline-block;
+    width:10px;
+    vertical-align: middle;
+    margin-bottom:2px;
+}
+.my-content .li-box{
+    padding:17px 0 6px 0;
+    height:auto;
+}
+.my-content .li-box a{
+    float:left;
+    display:block;
+    font-size:11px;
+    line-height: 20px;
+    text-align: center;
+}
+.my-content .dingdan a{
+    width:calc(100% / 3);
+}
+.my-content .qianbao a{
+    width:25%;
+}
+.my-content .li-box a img{
+    width:21px;
+}
+.my-content .li-box a span{
+    display: block;
+    line-height: 11px;
+    margin-bottom:4px;
+}
+.my-content .qianbao a span:nth-of-type(1){
+    font-size:15px;
+    margin-bottom:12px;
+    color:#232326;
+}

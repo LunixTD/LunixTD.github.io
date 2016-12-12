@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    -moz-user-select: none;
+}
+
+html,
+body {
+    width: 100vw;
+    height:100vh;
+    max-width: 640px;
+    min-width: 320px;
+    overflow: hidden;
+    margin: 0 auto;
+    background-color: #F3F5F7;
+}
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    color: black;
+}
+header .search{
+    width:calc(100% - 80px);
+    height:30px;
+    border:1px solid rgba(0,0,0,0.09);
+    border-radius: 4px;
+    padding-left:15px;
+}
+
+/*大分类*/
+.sort-main{
+
+}
+nav{
+    position: relative;
+    float:left;
+    width: 76px;
+    overflow: hidden;
+    min-height: 100%;
+}
+nav ul{
+    width:100%;
+}
+nav ul li{
+    height:46px;
+    line-height:46px;
+    background-color:white;
+    text-align: center;
+    position: relative;
+    border-bottom:1px solid rgba(0,0,0,0.09);
+    border-right:1px solid rgba(0,0,0,0.09);
+}
+.chose a{
+    color:#f23030;
+}
+nav ul li a{
+    display: block;
+    width:100%;
+    height:46px;
+    font-size:11px;
+    color:#232326;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.container{
+    width:100%;
+    height:auto;
+    color:#252525;
+    padding-left:76px;
+}
+.content{
+    width:100%;
+}
+.content .top-img{
+    margin:7px;
+    margin-bottom:0;
+}
+.content .top-img img{
+    width:100%;
+    vertical-align: top;
+}
+.goods{
+    margin:19px 7px 0 7px;
+}
+.goods h4{
+    font-size:11px;
+    margin:0;
+    padding:0;
+    line-height: 16px;
+    color:#232326;
+    font-weight: normal;
+}
+.goods .menu{
+    height:14px;
+    float: right;
+}
+.goods .menu img{
+    vertical-align: middle;
+}
+.goods .menu img:nth-of-type(1){
+    height:12px;
+}
+.goods .menu img:nth-of-type(2){
+    height:10px;
+}
+.goods .menu span{
+    display: inline-block;
+    color:#848689;
+    font-size:10px;
+    margin:0 4px;
+    vertical-align: middle;
+}
+.goods ul{
+    padding:7px 10px 0 10px;
+    margin-top:9px;
+    font-size:0;
+    background-color: white;
+}
+.goods ul li{
+    width:calc(100% / 3);
+    display: inline-block;
+    text-align: center;
+}
+.goods ul li img{
+    width:55px;
+    height:55px;
+}
+.goods ul li span{
+    display: block;
+    font-size:10px;
+    color:#686868;
+    height:31px;
+    text-overflow: ellipsis;
+}

@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <title>Title</title>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/index-goods.css">
+    <link rel="stylesheet" href="css/search.css">
+</head>
+
+<body>
+    <header id="top">
+        <a href=""><span></span></a>
+        <div id="search-content">
+            <label for="search"></label>
+            <input type="text" id="search" placeholder="请输入商品名称">
+        </div>
+        <a href="log.html"><span></span></a>
+    </header>
+    <div id="search-mask">
+        <div class="mask-header">
+            <span id='close'><a href=""></a></span>
+            <input class="search" type="text" placeholder="请输入商品名称">
+            <span><a href='sort.html'></a></span>
+        </div>
+        <div class="search-list">
+            <div class="search-title">热门搜索<i></i></div>
+            <div class="list">
+                <span>坡跟短靴</span>
+                <span>蓝牙无线鼠标</span>
+                <span>巧克力酱</span>
+                <span>无骨雨刷</span>
+                <span>人体电子秤</span>
+                <span>双层玻璃杯</span>
+            </div>
+        </div>
+    </div>
+    <div class="banner banner1">
+        <ul>
+            <li><img src="" alt=""></li>
+            <li><img src="" alt=""></li>
+            <li><img src="" alt=""></li>
+            <li><img src="" alt=""></li>
+            <li><img src="" alt=""></li>
+            <li><img src="" alt=""></li>
+            <li><img src="" alt=""></li>
+            <li><img src="" alt=""></li>
+        </ul>
+        <div class="banner-dot">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <nav id='nav-top'>
+        <a href=""><span><img src="" alt=""><span>京东超市</span></span></a>
+        <a href=""><span><img src="" alt=""><span>全球购</span></span></a>
+        <a href=""><span><img src="" alt=""><span>服装城</span></span></a>
+        <a href=""><span><img src="" alt=""><span>生鲜</span></span></a>
+        <a href=""><span><img src="" alt=""><span>充值中心</span></span></a>
+        <a href=""><span><img src="" alt=""><span>火车票</span></span></a>
+        <a href=""><span><img src="" alt=""><span>京东金融</span></span></a>
+        <a href=""><span><img src="" alt=""><span>领券</span></span></a>
+        <a href=""><span><img src="" alt=""><span>物流查询</span></span></a>
+        <a href=""><span><img src="" alt=""><span>我的关注</span></span></a>
+    </nav>
+    <div id="news">
+        <a href="">
+            <img src="images/icon/jd-news.png" alt="">
+        </a>
+        <a href="">
+            <div class="banner banner2">
+                <ul>
+                    <li><span class="red">抢</span>智能手表五折，10大智能新品0元试用</li>
+                    <li><span class="red">荐</span>华为荣耀手表S1新品预约抽荣耀8手机</li>
+                    <li><span class="red">抢</span>智能手表五折，10大智能新品0元试用</li>
+                    <li><span class="red">爆</span>1024投影节，每满999立减150</li>
+                </ul>
+            </div>
+        </a>
+        <a href=""><span>更多</span></a>
+    </div>
+    <div id="miao">
+        <div class="title">
+            <span></span>
+            <h2>京东秒杀</h2>
+            <div class="time">
+                <span class="hour"></span>
+                <span>:</span>
+                <span class="minute"></span>
+                <span>:</span>
+                <span class="second"></span>
+            </div>
+            <a href="抢购.html">
+                <span>更多秒杀</span>
+                <span></span>
+            </a>
+        </div>
+        <div class="row-list">
+            <ul>
+                <li>
+                    <a><img src="" alt="">
+                        <div class="cir">超值</div>
+                    </a><span>¥379</span>
+                    <span>¥499</span>
+                </li>
+                <li>
+                    <a><img src="" alt="">
+                        <div class="cir">热卖</div>
+                    </a><span>¥49.6</span>
+                    <span>¥79.9</span>
+                </li>
+                <li>
+                    <a><img src="" alt="">
+                        <div class="cir">推荐</div>
+                    </a><span>¥2199</span>
+                    <span>¥2899</span>
+                </li>
+                <li>
+                    <a><img src="" alt="">
+                        <div class="cir"></div>
+                    </a><span>¥1099</span>
+                    <span>¥1199</span>
+                </li>
+                <li>
+                    <a><img src="" alt="">
+                        <div class="cir"></div>
+                    </a><span>¥219</span>
+                    <span>¥329</span>
+                </li>
+                <li>
+                    <a><img src="" alt="">
+                        <div class="cir"></div>
+                    </a><span>¥59</span>
+                    <span>¥68</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="floor">
+        <img src="images/banner/board1.jpg" alt="">
+    </div>
+    <div id="goods-a">
+        <a href="detail.html" class="block-a">
+            <div class="block-al">
+                <strong>排行榜</strong>
+                <p>热卖爆品省心购</p>
+                <span>轻松选好物</span>
+            </div>
+            <img src="images/goods/small/goods_a1.jpg" alt="">
+        </a>
+        <a href="detail.html" class="block-a">
+            <div class="block-al">
+                <strong>闪购</strong>
+                <p>匡威帆布鞋5折</p>
+            </div>
+            <img src="images/goods/small/goods_a2.jpg" alt="">
+        </a>
+    </div>
+
+    <div class="floors">
+        <img src="images/icon/floor1.jpg" alt="">
+    </div>
+    <div id="goods-b">
+        <a href="detail.html" class="block-a">
+            <div class="block-al">
+                <strong>玩3C</strong>
+                <p>每满999减150</p>
+                <span>京东光影节</span>
+            </div>
+            <img src="images/goods/small/goods_b1.jpg" alt="">
+        </a>
+        <a href="detail.html" class="block-a">
+            <div class="block-al">
+                <strong>京东家电</strong>
+                <p>领券减500</p>
+            </div>
+            <img src="images/goods/small/goods_b2.jpg" alt="">
+        </a>
+        <a href="detail.html" class="block-a">
+            <div class="block-al">
+                <strong>京东超市</strong>
+                <p>黑芝麻糊买1赠1</p>
+            </div>
+            <img src="images/goods/small/goods_b3.jpg" alt="">
+        </a>
+        <a href="detail.html" class="block-a">
+            <div class="block-al">
+                <strong>爱家</strong>
+                <p>买家具打白条</p>
+                <span>12期免息</span>
+            </div>
+            <img src="images/goods/small/goods_b4.jpg" alt="">
+        </a>
+        <a href="detail.html" class="block-b">
+            <div class="block-bl">
+                <strong>爱宝宝</strong>
+                <p>尿裤低至69</p>
+                <span>享品质</span>
+            </div>
+            <img src="images/goods/small/goods_c1.jpg" alt="">
+        </a>
+        <a href="detail.html" class="block-b">
+            <div class="block-bl">
+                <strong>爱美丽</strong>
+                <p>洁面沐浴套装</p>
+            </div>
+            <img src="images/goods/small/goods_c2.jpg" alt="">
+        </a>
+        <a href="detail.html" class="block-b">
+            <div class="block-bl">
+                <strong>爱吃</strong>
+                <p>零食爆款直降</p>
+                <span>提前枪</span>
+            </div>
+            <img src="images/goods/small/goods_c3.jpg" alt="">
+        </a>
+        <a href="detail.html" class="block-b">
+            <div class="block-bl">
+                <strong>爱逛</strong>
+                <p>跨店399-100</p>
+            </div>
+            <img src="images/goods/small/goods_c4.jpg" alt="">
+        </a>
+    </div>
+    <div class="banner banner3">
+        <ul>
+            <li><img src="images/banner/board2.jpg" alt=""></li>
+            <li><img src="images/banner/board3.jpg" alt=""></li>
+            <li><img src="images/banner/board4.jpg" alt=""></li>
+            <li><img src="images/banner/board3.jpg" alt=""></li>
+        </ul>
+        <div class="banner-dot">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <div class="floors">
+        <img src="images/icon/floor2.jpg" alt="">
+    </div>
+
+    <div id="goods-c">
+        <a href="detail.html" class="block-a">
+            <div class="block-al">
+                <strong>全球购自营</strong>
+                <p>满199-100</p>
+                <span>德运奶更优惠</span>
+            </div>
+            <img src="images/goods/small/goods_d1.jpg" alt="">
+        </a>
+        <a href="detail.html" class="block-a">
+            <div class="block-al">
+                <strong>环球时尚</strong>
+                <p>大牌低至3折</p>
+            </div>
+            <img src="images/goods/small/goods_d2.jpg" alt="">
+        </a>
+        <a href="detail.html" class="block-a">
+            <div class="block-al">
+                <strong>健康运动</strong>
+                <p>探路者低至3折</p>
+            </div>
+            <img src="images/goods/small/goods_d3.jpg" alt="">
+        </a>
+        <a href="detail.html" class="block-a">
+            <div class="block-al">
+                <strong>奢品大牌</strong>
+                <p>万宝龙低至599</p>
+                <span>万宝龙特卖</span>
+            </div>
+            <img src="images/goods/small/goods_d4.jpg" alt="">
+        </a>
+        <a href="detail.html" class="block-a">
+            <div class="block-al">
+                <strong>珠宝首饰</strong>
+                <p>周大福童趣木马</p>
+                <span>品质周大福</span>
+            </div>
+            <img src="images/goods/small/goods_d5.jpg" alt="">
+        </a>
+        <a href="detail.html" class="block-a">
+            <div class="block-al">
+                <strong>达人精选</strong>
+                <p>混搭叠穿正对季</p>
+            </div>
+            <img src="images/goods/small/goods_d6.jpg" alt="">
+        </a>
+    </div>
+    <div class="banner banner4">
+        <ul>
+            <li><img src="images/banner/board5.jpg" alt=""></li>
+            <li><img src="images/banner/board6.jpg" alt=""></li>
+            <li><img src="images/banner/board7.jpg" alt=""></li>
+            <li><img src="images/banner/board6.jpg" alt=""></li>
+        </ul>
+        <div class="banner-dot">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <div class="floors">
+        <img src="images/icon/floor3.jpg" alt="">
+    </div>
+    <div id="goods-d">
+        <div>
+            <a href="detail.html" class="block-a">
+                <div class="block-al">
+                    <strong>智能生活</strong>
+                    <p>可读微信信息</p>
+                </div>
+                <img src="images/goods/small/goods_e1.jpg" alt="">
+            </a>
+            <a href="detail.html" class="block-b">
+                <div class="block-bl">
+                    <strong>白条商城</strong>
+                    <p>佳能12期免息</p>
+                    <span>0首付</span>
+                </div>
+                <img src="images/goods/small/goods_e2.jpg" alt="">
+            </a>
+            <a href="detail.html" class="block-b">
+                <div class="block-bl">
+                    <strong>京东众筹</strong>
+                    <p>1元秒杀</p>
+                </div>
+                <img src="images/goods/small/goods_e3.jpg" alt="">
+            </a>
+        </div>
+        <div>
+            <a href="detail.html" class="block-a">
+                <div class="block-al">
+                    <strong>团购</strong>
+                    <p>16新款限时降</p>
+                </div>
+                <img src="images/goods/small/goods_e4.jpg" alt="">
+            </a>
+            <a href="detail.html" class="block-b">
+                <div class="block-bl">
+                    <strong>京东旅行</strong>
+                    <p>爱旅行爱生活</p>
+                    <span>爱折扣</span>
+                </div>
+                <img src="images/goods/small/goods_e5.jpg" alt="">
+            </a>
+            <a href="detail.html" class="block-b">
+                <div class="block-bl">
+                    <strong>电影娱乐</strong>
+                    <p>五月天演唱会</p>
+                </div>
+                <img src="images/goods/small/goods_e6.jpg" alt="">
+            </a>
+        </div>
+        <a href="detail.html" class="block-b">
+            <div class="block-bl">
+                <strong>爱车生活</strong>
+                <p>立减4000元</p>
+                <span>限时惠</span>
+            </div>
+            <img src="images/goods/small/goods_e7.jpg" alt="">
+        </a>
+        <a href="detail.html" class="block-b">
+            <div class="block-bl">
+                <strong>陪伴宝宝</strong>
+                <p>5折秒杀</p>
+                <span>低至59</span>
+            </div>
+            <img src="images/goods/small/goods_e8.jpg" alt="">
+        </a>
+        <a href="detail.html" class="block-b">
+            <div class="block-bl">
+                <strong>清仓二手</strong>
+                <p>清仓二手</p>
+            </div>
+            <img src="images/goods/small/goods_e9.jpg" alt="">
+        </a>
+        <a href="detail.html" class="block-b">
+            <div class="block-bl">
+                <strong>京东拍卖</strong>
+                <p>经典名品典藏</p>
+            </div>
+            <img src="images/goods/small/goods_e10.jpg" alt="">
+        </a>
+    </div>
+    <div class="banner banner5">
+        <ul>
+            <li><img src="images/banner/board6.jpg" alt=""></li>
+            <li><img src="images/banner/board7.jpg" alt=""></li>
+            <li><img src="images/banner/board8.jpg" alt=""></li>
+            <li><img src="images/banner/board7.jpg" alt=""></li>
+        </ul>
+        <div class="banner-dot">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <div class="floors">
+        <img src="images/icon/floor4.jpg" alt="">
+    </div>
+
+
+    <div id="goods-e">
+        <a href="detail.html" class="block-a">
+            <div class="block-al">
+                <strong>大家电馆</strong>
+                <p>最高减1500</p>
+            </div>
+            <img src="images/goods/small/goods_f1.jpg" alt="">
+        </a>
+        <a href="detail.html" class="block-a">
+            <div class="block-al">
+                <strong>手机数码</strong>
+                <p>Z11miniS开抢</p>
+            </div>
+            <img src="images/goods/small/goods_f2.png" alt="">
+        </a>
+        <a href="detail.html" class="block-a">
+            <div class="block-al">
+                <strong>美食城</strong>
+                <p>跨店3免1</p>
+            </div>
+            <img src="images/goods/small/goods_f3.jpg" alt="">
+        </a>
+        <a href="detail.html" class="block-a">
+            <div class="block-al">
+                <strong>时尚馆</strong>
+                <p>毛呢满599减200</p>
+                <span>保暖季</span>
+            </div>
+            <img src="images/goods/small/goods_f4.jpg" alt="">
+        </a>
+        <a href="detail.html" class="block-b">
+            <div class="block-bl">
+                <strong>中外名酒</strong>
+                <p>3件8折</p>
+            </div>
+            <img src="images/goods/small/goods_f5.jpg" alt="">
+        </a>
+        <a href="detail.html" class="block-b">
+            <div class="block-bl">
+                <strong>电脑办公</strong>
+                <p>5折电脑疯抢</p>
+            </div>
+            <img src="images/goods/small/goods_f6.jpg" alt="">
+        </a>
+        <a href="detail.html" class="block-b">
+            <div class="block-bl">
+                <strong>鞋靴箱包</strong>
+                <p>箱包29元起</p>
+            </div>
+            <img src="images/goods/small/goods_f7.jpg" alt="">
+        </a>
+        <a href="detail.html" class="block-b">
+            <div class="block-bl">
+                <strong>小家电馆</strong>
+                <p>低至5折</p>
+            </div>
+            <img src="images/goods/small/goods_f8.jpg" alt="">
+        </a>
+        <a href="detail.html" class="block-b">
+            <div class="block-bl">
+                <strong>生鲜</strong>
+                <p>猕猴桃1.2</p>
+            </div>
+            <img src="images/goods/small/goods_f9.jpg" alt="">
+        </a>
+        <a href="detail.html" class="block-b">
+            <div class="block-bl">
+                <strong>家装城</strong>
+                <p>家纺799-400</p>
+            </div>
+            <img src="images/goods/small/goods_f10.jpg" alt="">
+        </a>
+        <a href="detail.html" class="block-b">
+            <div class="block-bl">
+                <strong>图书音像</strong>
+                <p>满300减100</p>
+            </div>
+            <img src="images/goods/small/goods_f11.jpg" alt="">
+        </a>
+        <a href="detail.html" class="block-b">
+            <div class="block-bl">
+                <strong>个护清洁</strong>
+                <p>第二件0元</p>
+            </div>
+            <img src="images/goods/small/goods_f12.jpg" alt="">
+        </a>
+    </div>
+    <div class="banner banner6">
+        <ul>
+            <li><img src="images/banner/board8.jpg" alt=""></li>
+        </ul>
+    </div>
+    <div class="floors">
+        <img src="images/icon/floor5.jpg" alt="">
+    </div>
+    <div id="goods-f">
+        <a href="detail.html" class="block-c">
+            <div class="block-cl">
+                <strong>精选</strong>
+                <p>20家好点为你精心挑选</p>
+                <img src="images/goods/small/goods_j1.jpg" alt="">
+                <img src="images/goods/small/goods_j2.jpg" alt="">
+                <span>探路者京东自营旗舰店</span>
+            </div>
+        </a>
+        <a href="detail.html" class="block-c">
+            <div class="block-cl">
+                <strong>女装</strong>
+                <p>女神教师</p>
+                <img src="images/goods/small/goods_j3.jpg" alt="">
+                <img src="images/goods/small/goods_j4.jpg" alt="">
+                <span>森马自营旗舰店</span>
+            </div>
+        </a>
+    </div>
+    <main>
+        <div class="text"><span><span class="text-img"></span>为您推荐</span>
+        </div>
+        <ul class="goods">
+            <li>
+                <a href="detail.html" class="goods-content">
+                    <img src="images/goods/main/goods1.jpg" alt="">
+                    <div class="goods-text">
+                        <p>耐尔斯顿(NERSD)正品牌瑞士防水全自动韩版石英夜光机械腕表学生手表女表钨钢超薄时尚款式 6084女款夜光玫瑰金</p>
+                        <span><small>¥</small>79<small>.00</small><span>看相似</span></span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="detail.html" class="goods-content">
+                    <img src="images/goods/main/goods2.jpg" alt="">
+                    <div class="goods-text">
+                        <p>联想(Lenovo)小新Air13 Pro 13.3英寸14.8mm超轻薄笔记本电脑（i5 4G 256G PCIE SSD 940MX 2G FHD IPS）银"</p>
+                        <span><small>¥</small>5299<small>.00</small><span>看相似</span></span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="detail.html" class="goods-content">
+                    <img src="images/goods/main/goods3.jpg" alt="">
+                    <div class="goods-text">
+                        <p>嘉博朗 楼梯防滑踏步垫 免胶旋转实木楼梯地垫 地垫可定制订做楼梯垫 165酒红色 24cm*64cm</p>
+                        <span><small>¥</small>579<small>.00</small><span>看相似</span></span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="detail.html" class="goods-content">
+                    <img src="images/goods/main/goods4.jpg" alt="">
+                    <div class="goods-text">
+                        <p>雷柏（Rapoo） M218 无线光学鼠标 黑色</p>
+                        <span><small>¥</small>34<small>.80</small><span>看相似</span></span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="detail.html" class="goods-content">
+                    <img src="images/goods/main/goods6.jpg" alt="">
+                    <div class="goods-text">
+                        <p>【京东超市】洋河蓝色经典海之蓝 52度 480ml</p>
+                        <span><small>¥</small>139<small>.00</small><span>看相似</span></span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="detail.html" class="goods-content">
+                    <img src="images/goods/main/goods5.jpg" alt="">
+                    <div class="goods-text">
+                        <p>alt="宣途灯饰 欧式水晶吊灯 简约现代客厅吊灯led水晶吊灯餐厅卧室灯个性简欧客厅灯 美式灯具 3头配普通灯泡"</p>
+                        <span><small>¥</small>398<small>.00</small><span>看相似</span></span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="detail.html" class="goods-content">
+                    <img src="images/goods/main/goods7.jpg" alt="">
+                    <div class="goods-text">
+                        <p>【京东超市】温碧泉力透白臻白凝润四件套装（洁面乳+柔肤水+养肤乳+雪肌霜）美白补水保湿护肤套装化妆品</p>
+                        <span><small>¥</small>198<small>.00</small><span>看相似</span></span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="detail.html" class="goods-content">
+                    <img src="images/goods/main/goods8.jpg" alt="">
+                    <div class="goods-text">
+                        <p>仙宝蝶 松糕鞋女2016新款女鞋内增高休闲鞋女乐福鞋厚底坡跟系带单鞋学院风学生鞋子 盾8868红色 37"</p>
+                        <span><small>¥</small>79<small>.00</small><span>看相似</span></span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+        <div class="go-on">
+            <a href="">点击继续加载</a>
+        </div>
+    </main>
+    <div id="footer">
+        <div class="info">
+            <ul>
+                <li><a href="log.html">登录</a></li>
+                <li><a href="reg.html">注册</a></li>
+                <li><a href="">反馈</a></li>
+                <li><a href="#top">回到顶部</a></li>
+            </ul>
+        </div>
+        <div class="type">
+            <ul>
+                <li><a href="">客户端</a></li>
+                <li><a href="">触屏版</a></li>
+                <li><a href="">电脑版</a></li>
+            </ul>
+        </div>
+        <div class="right">Copyright © 2004-2016 京东JD.com 版权所有</div>
+    </div>
+
+    <!--底部-->
+    <footer>
+        <ul>
+            <li>
+                <a href=""><img src="images/icon/home.png" alt=""></a>
+            </li>
+            <li>
+                <a href="sort.html"><img src="images/icon/sort.png" alt=""></a>
+            </li>
+            <li>
+                <a href="car.html"><img src="images/icon/shop.png" alt=""></a>
+            </li>
+            <li>
+                <a href="my.html"><img src="images/icon/my.png" alt=""></a>
+            </li>
+        </ul>
+    </footer>
+    <div id="to-top">
+        <a href="#top"><img src="images/icon/to-top.png" alt=""></a>
+    </div>
+    <script src="js/banner.js"></script>
+    <script src="js/resize.js"></script>
+    <script src="js/to-top.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/search.js"></script>
+</body>
+
+</html>

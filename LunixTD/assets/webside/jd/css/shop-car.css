@@ -1,0 +1,362 @@
+* {
+    box-sizing: border-box;
+    -moz-user-select: none;
+}
+
+html,
+body {
+    width: 100vw;
+    max-width: 640px;
+    min-width: 320px;
+    margin: 0 auto;
+    background-color: #F3F5F7;
+}
+
+html {
+    padding-bottom: 50px;
+}
+
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    color: black;
+}
+
+.main .tip {
+    height: 44px;
+    line-height: 34px;
+    padding-bottom: 10px;
+    font-size: 13px;
+    color: #686868;
+}
+
+.main .tip>span {
+    display: block;
+    background-color: white;
+    text-align: center;
+}
+
+.main .tip>span span {
+    display: inline-block;
+    vertical-align: middle;
+    background-color: white;
+}
+
+.main .tip i {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-right: 7px;
+    background: url(../images/shop-car/safe_icon.png);
+    background-size: 100%;
+    vertical-align: middle;
+}
+
+.shop-goods {
+    padding: 0 6px;
+    margin-bottom: 10px;
+}
+
+.shop-goods .goods {
+    background-color: white;
+}
+
+.shop-goods .goods .shop-title {
+    position: relative;
+    height: 44px;
+    line-height: 44px;
+    padding-left: 40px;
+}
+
+.shop-goods .goods .shop-title .check-icon {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-left: 10px;
+    height: 100%;
+}
+
+.check-icon .icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    background: url(../images/shop-car/shop-Icon.png);
+    background-size: 50px 150px;
+    cursor: pointer;
+    background-position: -25px 0;
+}
+
+
+/*.shop-goods .goods .shop-title .check-icon .icon {
+    background-position: -25px 0;
+}*/
+
+.shop-goods .goods .shop-title div {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.shop-goods .shop-title-content .shop-icon {
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+    padding-right: 6px;
+}
+
+.shop-goods .shop-title-content .shop-icon img {
+    width: 16px;
+}
+
+.shop-goods .shop-title-content {
+    width: 100%;
+}
+
+.shop-goods .shop-title-content .shop-title-name {
+    font-size: 14px;
+    color: #252525;
+    display: inline-block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    vertical-align: top;
+}
+
+.shop-goods .shop-title-content .title-info {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-right: 10px;
+    font-size: 12px;
+    color: #848689;
+}
+
+.goods .shop-list li {
+    position: relative;
+    width: 100%;
+    height: 115px;
+}
+
+.goods .shop-list li .icon {
+    position: absolute;
+    left: 10px;
+    top: 35px;
+}
+
+.goods .shop-list li .goods-content {
+    width: 100%;
+    height: 100%;
+    padding-left: 40px;
+}
+
+.goods .shop-list li .goods-content>div {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.goods .shop-list li .goods-content .goods-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid rgba(0, 0, 0, .05);
+}
+
+.goods .shop-list li .goods-content .goods-img img {
+    width: 88px;
+    height: 88px;
+    vertical-align: middle;
+}
+
+.goods .shop-list li .goods-content .goods-info {
+    width: 100%;
+    height: 87px;
+    padding-left: 95px;
+    padding-right: 10px;
+}
+
+.goods .shop-list li .goods-content .goods-info a {
+    display: inline-block;
+}
+
+.goods .shop-list li .goods-content .goods-info .goods-text {
+    display: inline-block;
+    height: 30px;
+    font-size: 13px;
+    line-height: 15px;
+    vertical-align: middle;
+    color: #232326;
+    word-break: break-all;
+    overflow: hidden;
+    margin-right: 20px;
+    margin-bottom: 3px;
+}
+
+.goods .shop-list li .goods-content .goods-info .pro {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 11px;
+    line-height: 12px;
+    color: #81838e;
+    margin-bottom: 3px;
+}
+
+.goods .shop-list li .goods-content .goods-info .icon-list {
+    height: 14px;
+    margin-bottom: 3px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.goods .shop-list li .goods-content .goods-info .num-list {
+    position: relative;
+    text-align: left;
+    height: 24px;
+}
+
+.goods .shop-list li .goods-content .num-list .price {
+    display: inline-block;
+    height: 100%;
+    line-height: 24px;
+    font-size: 16px;
+    color: #f23030;
+    margin-left: 3px;
+}
+
+.goods .shop-list li .goods-content .num-list .number {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 84px;
+    white-space: nowrap;
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, .05);
+}
+
+.goods .num-list .number a {
+    display: inline-block;
+    width: 25px;
+    height: 100%;
+    background: url(../images/shop-car/shop-Icon.png);
+    background-size: 50px 150px;
+    vertical-align: top;
+}
+
+.goods .num-list a:nth-of-type(1) {
+    background-position: -19px -115px;
+}
+
+.goods .num-list a:nth-of-type(2) {
+    background-position: 7px -95px;
+}
+
+.goods .num-list input {
+    width: calc(100% - 50px);
+    height: 22px;
+    border: none;
+    vertical-align: top;
+    text-align: center;
+    -moz-user-select: text;
+}
+
+.goods .shop-list .change {
+    margin: 10px 10px 6px 0;
+    height: 13px;
+    line-height: 13px;
+    color: #232326;
+    font-size: 12px;
+    text-align: right;
+}
+
+.goods .shop-list .change a {
+    padding-left: 10px;
+    border-left: 1px solid rgba(0, 0, 0, .1);
+}
+
+.goods .shop-list .goods-content>div {
+    margin: 10px 0;
+}
+
+.shop-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    min-width: 320px;
+    max-width:640px;
+    height: 50px;
+    background-color: white;
+    border-top: 1px solid rgba(0, 0, 0, .05);
+}
+@media only screen and (min-width: 640px) {
+    .shop-footer {
+        left: calc(50% - 320px);
+    }
+}
+.shop-footer .check-icon {
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 15px;
+    vertical-align: top;
+}
+
+.shop-footer .all {
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    font-size: 12px;
+    vertical-align: top;
+}
+
+.shop-footer div {
+    display: inline-block;
+}
+
+.shop-footer .num {
+    margin-left: 5px;
+}
+
+.shop-footer .num .money {
+    font-size: 14px;
+    color: #232326;
+    margin-top: 10px;
+    line-height: 13px;
+    display: block;
+}
+
+.shop-footer .num .count {
+    font-size: 10px;
+    display: inline-block;
+    opacity: .8;
+    height: 14px;
+    line-height: 18px;
+    white-space: nowrap;
+}
+
+.shop-footer .result {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    width: 90px;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+    background-color: #f23030;
+}
+.shop-footer .result small{
+    font-size:12px;
+    margin-left:2px;
+}

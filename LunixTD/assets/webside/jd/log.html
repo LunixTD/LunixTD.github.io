@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/reg-log.css">
+    <script src="js/jquery-2.1.4.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="" onclick="javascript:history.back();"><span class="iconBg"></span></a>京东登录
+    </header>
+    <div class="content">
+        <div class="input user"><input type="text" maxlength="20" placeholder="用户名/邮箱/已验证手机"><i class="iconBg"></i></div>
+        <div class="input pass">
+            <input type="password" maxlength="20" placeholder="请输入密码"><i class="iconBg"></i>
+            <div class="checkbtn btn-left">
+                <span>abc</span>
+                <span>···</span>
+            </div>
+        </div>
+        <div class="input code">
+            <input type="text" maxlength="4" placeholder="请输入验证码"><i class="iconBg"></i>
+            <a class="code"></a>
+        </div>
+        <div class="notice"></div>
+        <a id="loginBtn" href="">登录</a>
+        <div class="rember log">
+            <span class="iconBg"></span>一个月内免登陆
+        </div>
+        <div class="rember fixed">
+            <a href="" class="find"><span class="iconBg"></span>找回密码</a>
+            <a href="reg.html" class="reg"><span class="iconBg"></span>快速注册</a>
+        </div>
+        <div class="text"><span>其他登录方式</span></div>
+        <div class="quick-log">
+            <a href=""><span class="iconBg"></span>QQ</a>
+        </div>
+    </div>
+    <script src="js/code.js"></script>
+    <script src="js/logCheck.js"></script>
+    <script>
+        var input = $('.content .input input');
+        checkInput(input);
+    </script>
+</body>
+
+</html>

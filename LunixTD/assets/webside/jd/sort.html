@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/sort.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/search.css">
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <style>
+        .navToggle ul li:nth-of-type(2) {
+            background-color: #2d2d2d;
+        }
+        
+        header {
+            background: url(images/icon/header-bg.png);
+            background-size: auto 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="" onclick="javascript:history.back();"><span class="iconBg iconBg-l"></span></a>
+        <input class="search" type="text" placeholder="请输入商品名称">
+        <a href="javascript:void(0)" class="topNav"><span class="iconBg-r"></span></a>
+    </header>
+    <div id="search-mask">
+        <div class="mask-header">
+            <span id='close'><a href=""></a></span>
+            <input class="search" type="text" placeholder="请输入商品名称">
+            <span><a href='sort.html'></a></span>
+        </div>
+        <div class="search-list">
+            <div class="search-title">热门搜索<i></i></div>
+            <div class="list">
+                <span>坡跟短靴</span>
+                <span>蓝牙无线鼠标</span>
+                <span>巧克力酱</span>
+                <span>无骨雨刷</span>
+                <span>人体电子秤</span>
+                <span>双层玻璃杯</span>
+            </div>
+        </div>
+    </div>
+    <div class="navToggle">
+        <ul>
+            <li><a href="index.html"><span></span><p>首页</p></a></li>
+            <li><a href="sort.html"><span></span><p>分类搜索</p></a></li>
+            <li><a href="car.html"><span></span><p>购物车</p></a></li>
+            <li><a href="my.html"><span></span><p>我的京东</p></a></li>
+        </ul>
+    </div>
+    <div class="sort-main">
+        <nav>
+            <ul>
+                <li class="chose"><a href="javascript:void(0);">热门推荐</a></li>
+                <li><a href="javascript:void(0);">潮流女装</a></li>
+                <li><a href="javascript:void(0);">品牌男装</a></li>
+                <li><a href="javascript:void(0);">个护化妆</a></li>
+                <li><a href="javascript:void(0);">家用电器</a></li>
+                <li><a href="javascript:void(0);">电脑办公</a></li>
+                <li><a href="javascript:void(0);">手机数码</a></li>
+                <li><a href="javascript:void(0);">母婴童装</a></li>
+                <li><a href="javascript:void(0);">图书</a></li>
+                <li><a href="javascript:void(0);">家居家纺</a></li>
+                <li><a href="javascript:void(0);">居家生活</a></li>
+                <li><a href="javascript:void(0);">家居建材</a></li>
+                <li><a href="javascript:void(0);">食品生鲜</a></li>
+                <li><a href="javascript:void(0);">酒水饮料</a></li>
+                <li><a href="javascript:void(0);">鞋靴香包</a></li>
+                <li><a href="javascript:void(0);">奢品礼品</a></li>
+                <li><a href="javascript:void(0);">钟表珠宝</a></li>
+                <li><a href="javascript:void(0);">玩具乐器</a></li>
+                <li><a href="javascript:void(0);">内衣配饰</a></li>
+                <li><a href="javascript:void(0);">汽车用品</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="content content1">
+            <div class="top-img">
+                <img src="images/sort/list1/top.jpg" alt="">
+            </div>
+            <div class="goods goods-a">
+                <h4>专场推荐</h4>
+                <ul>
+                    <li>
+                        <a href=""><img src="images/sort/list1/goods_a1.jpg" alt=""><span>10.31图书音像</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list1/goods_a2.jpg" alt=""><span>雾霾专场</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list1/goods_a3.jpg" alt=""><span>领券满129减20</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="goods goods-b">
+                <a href="" class="menu"><img src="images/icon/paihang.png" alt=""><span>排行榜</span><img src="images/icon/more.png" alt=""></a>
+                <h4>热门分类</h4>
+                <ul>
+                    <li>
+                        <a href=""><img src="images/sort/list1/goods_b1.png" alt=""><span>手机</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list1/goods_b2.jpg" alt=""><span>笔记本</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list1/goods_b3.jpg" alt=""><span>空调</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list1/goods_b4.jpg" alt=""><span>收纳用品</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list1/goods_b5.jpg" alt=""><span>炒锅</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list1/goods_b6.jpg" alt=""><span>啤酒</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list1/goods_b7.jpg" alt=""><span>吸顶灯</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="goods goods-b">
+                <a href="" class="menu"><img src="images/icon/paihang.png" alt=""><span>排行榜</span><img src="images/icon/more.png" alt=""></a>
+                <h4>热门分类</h4>
+                <ul>
+                    <li>
+                        <a href=""><img src="images/sort/list1/goods_b1.png" alt=""><span>手机</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list1/goods_b2.jpg" alt=""><span>笔记本</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list1/goods_b3.jpg" alt=""><span>空调</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list1/goods_b4.jpg" alt=""><span>收纳用品</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list1/goods_b5.jpg" alt=""><span>炒锅</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list1/goods_b6.jpg" alt=""><span>啤酒</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list1/goods_b7.jpg" alt=""><span>吸顶灯</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="content content2">
+            <div class="top-img">
+                <img src="images/sort/list2/top.jpg" alt="">
+            </div>
+            <div class="goods goods-a">
+                <h4>热门推荐</h4>
+                <ul>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_a1.jpg" alt=""><span>秋冬上新</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_a2.jpg" alt=""><span>599减200</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_a3.jpg" alt=""><span>大牌满减</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_a4.jpg" alt=""><span>品质羊绒</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_a5.jpg" alt=""><span>温暖绒羽</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_a6.jpg" alt=""><span>奢华皮革</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_a7.jpg" alt=""><span>精品女装</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_a8.jpg" alt=""><span>JD FOR HER</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_a9.jpg" alt=""><span>自营女装</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="goods goods-b">
+                <h4>热卖品牌</h4>
+                <ul>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b1.jpg" alt=""><span>新连衣裙</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b2.jpg" alt=""><span>针织开衫</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b3.png" alt=""><span>羽绒服</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b4.jpg" alt=""><span>时尚T恤</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b5.jpg" alt=""><span>高领毛衣</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b6.jpg" alt=""><span>小脚牛仔裤</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b7.jpg" alt=""><span>设计师</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b8.jpg" alt=""><span>短外套</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b9.jpg" alt=""><span>毛呢外套</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="goods goods-b">
+                <h4>热卖品牌</h4>
+                <ul>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b1.jpg" alt=""><span>新连衣裙</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b2.jpg" alt=""><span>针织开衫</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b3.png" alt=""><span>羽绒服</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b4.jpg" alt=""><span>时尚T恤</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b5.jpg" alt=""><span>高领毛衣</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b6.jpg" alt=""><span>小脚牛仔裤</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b7.jpg" alt=""><span>设计师</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b8.jpg" alt=""><span>短外套</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b9.jpg" alt=""><span>毛呢外套</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="content content3">
+            <div class="top-img">
+                <img src="images/sort/list1/top.jpg" alt="">
+            </div>
+            <div class="goods goods-a">
+                <h4>专场推荐</h4>
+                <ul>
+                    <li>
+                        <a href=""><img src="images/sort/list1/goods_a1.jpg" alt=""><span>10.31图书音像</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list1/goods_a2.jpg" alt=""><span>雾霾专场</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list1/goods_a3.jpg" alt=""><span>领券满129减20</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="goods goods-b">
+                <a href="" class="menu"><img src="images/icon/paihang.png" alt=""><span>排行榜</span><img src="images/icon/more.png" alt=""></a>
+                <h4>热门分类</h4>
+                <ul>
+                    <li>
+                        <a href=""><img src="images/sort/list1/goods_b1.png" alt=""><span>手机</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list1/goods_b2.jpg" alt=""><span>笔记本</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list1/goods_b3.jpg" alt=""><span>空调</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list1/goods_b4.jpg" alt=""><span>收纳用品</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list1/goods_b5.jpg" alt=""><span>炒锅</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list1/goods_b6.jpg" alt=""><span>啤酒</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list1/goods_b7.jpg" alt=""><span>吸顶灯</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="goods goods-b">
+                <h4>热卖品牌</h4>
+                <ul>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b1.jpg" alt=""><span>新连衣裙</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b2.jpg" alt=""><span>针织开衫</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b3.png" alt=""><span>羽绒服</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b4.jpg" alt=""><span>时尚T恤</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b5.jpg" alt=""><span>高领毛衣</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b6.jpg" alt=""><span>小脚牛仔裤</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b7.jpg" alt=""><span>设计师</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b8.jpg" alt=""><span>短外套</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b9.jpg" alt=""><span>毛呢外套</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="content content4">
+            <div class="top-img">
+                <img src="images/sort/list2/top.jpg" alt="">
+            </div>
+            <div class="goods goods-a">
+                <h4>热门推荐</h4>
+                <ul>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_a1.jpg" alt=""><span>秋冬上新</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_a2.jpg" alt=""><span>599减200</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_a3.jpg" alt=""><span>大牌满减</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_a4.jpg" alt=""><span>品质羊绒</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_a5.jpg" alt=""><span>温暖绒羽</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_a6.jpg" alt=""><span>奢华皮革</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_a7.jpg" alt=""><span>精品女装</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_a8.jpg" alt=""><span>JD FOR HER</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_a9.jpg" alt=""><span>自营女装</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="goods goods-b">
+                <h4>热卖品牌</h4>
+                <ul>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b1.jpg" alt=""><span>新连衣裙</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b2.jpg" alt=""><span>针织开衫</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b3.png" alt=""><span>羽绒服</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b4.jpg" alt=""><span>时尚T恤</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b5.jpg" alt=""><span>高领毛衣</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b6.jpg" alt=""><span>小脚牛仔裤</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b7.jpg" alt=""><span>设计师</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b8.jpg" alt=""><span>短外套</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b9.jpg" alt=""><span>毛呢外套</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="goods goods-b">
+                <h4>热卖品牌</h4>
+                <ul>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b1.jpg" alt=""><span>新连衣裙</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b2.jpg" alt=""><span>针织开衫</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b3.png" alt=""><span>羽绒服</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b4.jpg" alt=""><span>时尚T恤</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b5.jpg" alt=""><span>高领毛衣</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b6.jpg" alt=""><span>小脚牛仔裤</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b7.jpg" alt=""><span>设计师</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b8.jpg" alt=""><span>短外套</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b9.jpg" alt=""><span>毛呢外套</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="content content5">
+            <div class="top-img">
+                <img src="images/sort/list1/top.jpg" alt="">
+            </div>
+            <div class="goods goods-a">
+                <h4>专场推荐</h4>
+                <ul>
+                    <li>
+                        <a href=""><img src="images/sort/list1/goods_a1.jpg" alt=""><span>10.31图书音像</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list1/goods_a2.jpg" alt=""><span>雾霾专场</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list1/goods_a3.jpg" alt=""><span>领券满129减20</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="goods goods-b">
+                <h4>热卖品牌</h4>
+                <ul>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b1.jpg" alt=""><span>新连衣裙</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b2.jpg" alt=""><span>针织开衫</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b3.png" alt=""><span>羽绒服</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b4.jpg" alt=""><span>时尚T恤</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b5.jpg" alt=""><span>高领毛衣</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b6.jpg" alt=""><span>小脚牛仔裤</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b7.jpg" alt=""><span>设计师</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b8.jpg" alt=""><span>短外套</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b9.jpg" alt=""><span>毛呢外套</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="goods goods-b">
+                <a href="" class="menu"><img src="images/icon/paihang.png" alt=""><span>排行榜</span><img src="images/icon/more.png" alt=""></a>
+                <h4>热门分类</h4>
+                <ul>
+                    <li>
+                        <a href=""><img src="images/sort/list1/goods_b1.png" alt=""><span>手机</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list1/goods_b2.jpg" alt=""><span>笔记本</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list1/goods_b3.jpg" alt=""><span>空调</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list1/goods_b4.jpg" alt=""><span>收纳用品</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list1/goods_b5.jpg" alt=""><span>炒锅</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list1/goods_b6.jpg" alt=""><span>啤酒</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list1/goods_b7.jpg" alt=""><span>吸顶灯</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="content content6">
+            <div class="top-img">
+                <img src="images/sort/list2/top.jpg" alt="">
+            </div>
+            <div class="goods goods-a">
+                <h4>热门推荐</h4>
+                <ul>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_a1.jpg" alt=""><span>秋冬上新</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_a2.jpg" alt=""><span>599减200</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_a3.jpg" alt=""><span>大牌满减</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_a4.jpg" alt=""><span>品质羊绒</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_a5.jpg" alt=""><span>温暖绒羽</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_a6.jpg" alt=""><span>奢华皮革</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_a7.jpg" alt=""><span>精品女装</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_a8.jpg" alt=""><span>JD FOR HER</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_a9.jpg" alt=""><span>自营女装</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="goods goods-b">
+                <h4>热卖品牌</h4>
+                <ul>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b1.jpg" alt=""><span>新连衣裙</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b2.jpg" alt=""><span>针织开衫</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b3.png" alt=""><span>羽绒服</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b4.jpg" alt=""><span>时尚T恤</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b5.jpg" alt=""><span>高领毛衣</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b6.jpg" alt=""><span>小脚牛仔裤</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b7.jpg" alt=""><span>设计师</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b8.jpg" alt=""><span>短外套</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b9.jpg" alt=""><span>毛呢外套</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="goods goods-b">
+                <h4>热卖品牌</h4>
+                <ul>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b1.jpg" alt=""><span>新连衣裙</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b2.jpg" alt=""><span>针织开衫</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b3.png" alt=""><span>羽绒服</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b4.jpg" alt=""><span>时尚T恤</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b5.jpg" alt=""><span>高领毛衣</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b6.jpg" alt=""><span>小脚牛仔裤</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b7.jpg" alt=""><span>设计师</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b8.jpg" alt=""><span>短外套</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b9.jpg" alt=""><span>毛呢外套</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="content content7">
+            <div class="top-img">
+                <img src="images/sort/list1/top.jpg" alt="">
+            </div>
+            <div class="goods goods-a">
+                <h4>专场推荐</h4>
+                <ul>
+                    <li>
+                        <a href=""><img src="images/sort/list1/goods_a1.jpg" alt=""><span>10.31图书音像</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list1/goods_a2.jpg" alt=""><span>雾霾专场</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list1/goods_a3.jpg" alt=""><span>领券满129减20</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="goods goods-b">
+                <a href="" class="menu"><img src="images/icon/paihang.png" alt=""><span>排行榜</span><img src="images/icon/more.png" alt=""></a>
+                <h4>热门分类</h4>
+                <ul>
+                    <li>
+                        <a href=""><img src="images/sort/list1/goods_b1.png" alt=""><span>手机</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list1/goods_b2.jpg" alt=""><span>笔记本</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list1/goods_b3.jpg" alt=""><span>空调</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list1/goods_b4.jpg" alt=""><span>收纳用品</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list1/goods_b5.jpg" alt=""><span>炒锅</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list1/goods_b6.jpg" alt=""><span>啤酒</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list1/goods_b7.jpg" alt=""><span>吸顶灯</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="content content8">
+            <div class="top-img">
+                <img src="images/sort/list2/top.jpg" alt="">
+            </div>
+            <div class="goods goods-a">
+                <h4>热门推荐</h4>
+                <ul>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_a1.jpg" alt=""><span>秋冬上新</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_a2.jpg" alt=""><span>599减200</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_a3.jpg" alt=""><span>大牌满减</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_a4.jpg" alt=""><span>品质羊绒</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_a5.jpg" alt=""><span>温暖绒羽</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_a6.jpg" alt=""><span>奢华皮革</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_a7.jpg" alt=""><span>精品女装</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_a8.jpg" alt=""><span>JD FOR HER</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_a9.jpg" alt=""><span>自营女装</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="goods goods-b">
+                <h4>热卖品牌</h4>
+                <ul>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b1.jpg" alt=""><span>新连衣裙</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b2.jpg" alt=""><span>针织开衫</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b3.png" alt=""><span>羽绒服</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b4.jpg" alt=""><span>时尚T恤</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b5.jpg" alt=""><span>高领毛衣</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b6.jpg" alt=""><span>小脚牛仔裤</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b7.jpg" alt=""><span>设计师</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b8.jpg" alt=""><span>短外套</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b9.jpg" alt=""><span>毛呢外套</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="content content8">
+            <div class="top-img">
+                <img src="images/sort/list1/top.jpg" alt="">
+            </div>
+            <div class="goods goods-a">
+                <h4>专场推荐</h4>
+                <ul>
+                    <li>
+                        <a href=""><img src="images/sort/list1/goods_a1.jpg" alt=""><span>10.31图书音像</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list1/goods_a2.jpg" alt=""><span>雾霾专场</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list1/goods_a3.jpg" alt=""><span>领券满129减20</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="goods goods-b">
+                <a href="" class="menu"><img src="images/icon/paihang.png" alt=""><span>排行榜</span><img src="images/icon/more.png" alt=""></a>
+                <h4>热门分类</h4>
+                <ul>
+                    <li>
+                        <a href=""><img src="images/sort/list1/goods_b1.png" alt=""><span>手机</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list1/goods_b2.jpg" alt=""><span>笔记本</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list1/goods_b3.jpg" alt=""><span>空调</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list1/goods_b4.jpg" alt=""><span>收纳用品</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list1/goods_b5.jpg" alt=""><span>炒锅</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list1/goods_b6.jpg" alt=""><span>啤酒</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list1/goods_b7.jpg" alt=""><span>吸顶灯</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="content content10">
+            <div class="top-img">
+                <img src="images/sort/list2/top.jpg" alt="">
+            </div>
+            <div class="goods goods-a">
+                <h4>热门推荐</h4>
+                <ul>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_a1.jpg" alt=""><span>秋冬上新</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_a2.jpg" alt=""><span>599减200</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_a3.jpg" alt=""><span>大牌满减</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_a4.jpg" alt=""><span>品质羊绒</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_a5.jpg" alt=""><span>温暖绒羽</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_a6.jpg" alt=""><span>奢华皮革</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_a7.jpg" alt=""><span>精品女装</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_a8.jpg" alt=""><span>JD FOR HER</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_a9.jpg" alt=""><span>自营女装</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="goods goods-b">
+                <h4>热卖品牌</h4>
+                <ul>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b1.jpg" alt=""><span>新连衣裙</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b2.jpg" alt=""><span>针织开衫</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b3.png" alt=""><span>羽绒服</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b4.jpg" alt=""><span>时尚T恤</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b5.jpg" alt=""><span>高领毛衣</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b6.jpg" alt=""><span>小脚牛仔裤</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b7.jpg" alt=""><span>设计师</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b8.jpg" alt=""><span>短外套</span></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/sort/list2/goods_b9.jpg" alt=""><span>毛呢外套</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/topNav.js"></script>
+    <script src="js/sort.js"></script>
+    <script src="js/search.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<div class="sort-container">
+    <div class="sort-content center">
+        <div class="trace">
+            <a href="#/">首页</a>
+            <span class="trace-to"></span>
+            <a href="javascript:" class="curr">{{sortName}}</a>
+        </div>
+        <div class="sort-banner">
+            <img src="./img/banner/{{sort}}.jpg" alt="">
+        </div>
+        <div class="sort-goods">
+            <div class="goods-list">
+                <div class="sort-nav">
+                    <ul>
+                        <li><a>分类 : </a></li>
+                        <li class="chose"><a href="">全部</a></li>
+                        <li ng-repeat="nav in navList"><a href="#/sort/{{sort}}#goods{{$index}}">{{nav.name}}</a></li>
+                    </ul>
+                    <div class="order-list">
+                        <ul>
+                            <li class="chose"><a href="javascript:">默认</a></li>
+                            <li><a href="javascript:">价格</a></li>
+                            <li><a href="javascript:">上架时间</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sort-box" ng-repeat="item in data" id="goods{{$index}}">
+                    <h1><img src="{{item.img}}" alt=""><span>{{item.title}}</span></h1>
+                    <p class="title-desc">{{item.desc}}</p>
+                    <div class="goods-show">
+                        <ul>
+                            <li ng-repeat="goodsItem in item.goods">
+                                <a href="" class="goods">
+                                    <div class="mask"></div>
+                                    <div class="img"><img src="{{goodsItem.img}}" alt=""></div>
+                                    <h3>{{goodsItem.name}}</h3>
+                                    <p class="price">{{goodsItem.price}}</p>
+                                    <p class="desc">{{goodsItem.desc}}</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

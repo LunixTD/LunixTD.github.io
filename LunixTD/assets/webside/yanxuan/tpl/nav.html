@@ -1,0 +1,29 @@
+<nav>
+    <div class="nav-container">
+        <ul class="nav center">
+            <div class="logo"></div>
+            <li class="nav-on nav-item"><a href="#/" class="nav-title nav-title-{{hover}}">首页</a></li>
+            <li class="nav-item navigator" ng-repeat="item in nav" mouse-over-out hover="hover">
+                <a href="#/sort/{{item.navId}}" class="nav-title nav-title-{{hover}}">{{item.title}}</a>
+                <div class="nav-mini" ng-show="hover">
+                    <ul class="nav-list center">
+                        <li class="nav-list-item" ng-repeat="navMini in item.nav">
+                            <a href="#/sort/{{item.navId}}#nav{{$index}}">
+                                <img src="{{navMini.img}}" alt="">
+                                <span>{{navMini.name}}</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="nav-item line"><a href="" class="nav-title">专题</a></li>
+            <li class="nav-item"><a href="" class="nav-title">甄选家</a></li>
+            <div class="right">
+                <a href="javascript:">登陆</a>
+                <a href="javascript:">注册</a>
+                <span class="shop icon"></span>
+            </div>
+        </ul>
+    </div>
+
+</nav>

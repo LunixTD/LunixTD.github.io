@@ -1,0 +1,259 @@
+/*主商品*/
+
+main .text {
+    position: relative;
+    margin: 10px 0;
+    text-align: center;
+    font-size: 14px;
+    color: #848689;
+}
+
+main .text>span {
+    position: relative;
+    background-color: #f0f2f5;
+    z-index: 10;
+    padding: 0 10px;
+}
+
+main span.text-img {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background: url(../images/icon/line.png);
+    background-size: 13px 13px;
+    line-height: 13px;
+    position: relative;
+    top: 1px;
+    margin-right: 8px;
+}
+
+main .text:after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background-color: #cbcbcb;
+}
+
+.goods {
+    width: 100%;
+    overflow: hidden;
+    font-size: 0;
+}
+
+.goods li {
+    width: 50%;
+    float: left;
+    text-align: center;
+    padding-bottom: 4px;
+}
+
+.goods li:nth-of-type(2n+1) {
+    padding-right: 2px;
+}
+
+.goods li:nth-of-type(2n) {
+    padding-left: 2px;
+}
+
+.goods li .goods-content {
+    display: block;
+    overflow: hidden;
+    background-color: white;
+    padding-bottom: 4px;
+}
+
+.goods li .goods-content img {
+    width: 100%;
+}
+
+.goods li p {
+    height: 33px;
+    font-size: 13px;
+    overflow: hidden;
+    text-align: left;
+    color: #232326;
+    line-height: 17px;
+    padding: 0 4px;
+    margin: 5px auto 3px;
+    background-color: white;
+}
+
+.goods li .goods-text>span {
+    position: relative;
+    color: #f23030;
+    font-size: 18px;
+    display: block;
+    padding: 0 4px;
+    height: 25px;
+    line-height: 25px;
+    text-align: left;
+}
+
+.goods li .goods-text span span {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 8px;
+    text-align: center;
+    color: #686868;
+    font-size: 12px;
+    width: 49px;
+    height: 24px;
+    line-height: 24px;
+    border: 1px solid rgba(0, 0, 0, 0.07);
+    cursor: pointer;
+}
+
+.goods li span small {
+    font-size: 13px;
+}
+
+main .no-more {
+    display: block;
+    width: 194px;
+    height: 72px;
+    margin: 15px auto;
+}
+
+#footer {
+    width: 100%;
+}
+
+#footer .info {
+    border-top: 1px solid rgba(0, 0, 0, 0.07);
+}
+
+#footer .info ul {
+    width: 320px;
+    margin: 0 auto;
+    padding: 18px 0;
+    overflow: hidden;
+}
+
+#footer .info li {
+    border-right: 1px solid #d7d7d7;
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+
+#footer .info li:last-child {
+    border: none;
+}
+
+#footer .info li a {
+    display: inline-block;
+    width: 72px;
+    text-align: center;
+    font-size: 14px;
+    color: #848689;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#footer .type {
+    border-top: 1px solid rgba(0, 0, 0, 0.07);
+}
+
+#footer .type ul {
+    width: 320px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#footer .type li {
+    width: calc(100% / 3);
+    float: left;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+#footer .type li:nth-of-type(1) {
+    opacity: .7;
+}
+
+#footer .type li:nth-of-type(3) {
+    opacity: .7;
+}
+
+#footer .type li a {
+    position: relative;
+    display: inline-block;
+    width: 45px;
+    height: 50px;
+    font-size: 12px;
+    color: #252525;
+    text-align: center;
+}
+
+#footer .type li a:before {
+    content: "";
+    display: block;
+    height: 38px;
+    width: 33px;
+    margin: 0 auto;
+    background: url(../images/icon/jd-sprites.png);
+    background-size: 200px 200px;
+}
+
+#footer .type li:nth-of-type(1) a:before {
+    background-position: -120px -70px;
+}
+
+#footer .type li:nth-of-type(1) a:after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 2px;
+    right: 3px;
+    background: url(../images/icon/jd-sprites.png);
+    background-size: 200px 200px;
+    background-position: -150px 0;
+}
+
+#footer .type li:nth-of-type(2) a:before {
+    background-position: -40px -70px;
+}
+
+#footer .type li:nth-of-type(3) a:before {
+    background-position: -80px -70px;
+}
+
+#footer .right {
+    width: 100%;
+    height: 44px;
+    line-height: 44px;
+    color: #848689;
+    font-size: 12px;
+    text-align: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.07);
+}
+
+
+/*to-top*/
+
+#to-top {
+    position: fixed;
+    bottom: 56px;
+    right: 8px;
+    z-index: 999;
+    display: none;
+}
+
+#to-top a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    overflow: hidden;
+}
+
+#to-top img {
+    width: 100%;
+}

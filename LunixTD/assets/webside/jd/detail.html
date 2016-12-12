@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/goods-info.css">
+    <link rel="stylesheet" href="css/header.css">
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <style>
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: url(images/icon/header-bg.png);
+            background-size: auto 100%;
+            z-index: 999;
+        }
+        
+        .navToggle ul {
+            line-height: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="goods-info-header">
+        <a href="" onclick="javascript:history.back();"><span class="iconBg iconBg-l"></span></a>
+        <ul class="nav">
+            <li><span class='chose'>商品</span></li>
+            <li><span>详情</span></li>
+            <li><span>评价</span></li>
+        </ul>
+        <a href="javascript:void(0)" class="topNav"><span class="iconBg-r"></span></a>
+        <div class="navToggle">
+            <ul>
+                <li><a href="index.html"><span></span><p>首页</p></a></li>
+                <li><a href="sort.html"><span></span><p>分类搜索</p></a></li>
+                <li><a href="car.html"><span></span><p>购物车</p></a></li>
+                <li><a href="my.html"><span></span><p>我的京东</p></a></li>
+            </ul>
+        </div>
+        <div class="info-head-nav">
+            <div class="head-nav" style="height:0"></div>
+            <div class="head-nav head-nav1">
+                <ul>
+                    <li class='chose'>商品介绍</li>
+                    <li>规格参数</li>
+                    <li>包装售后</li>
+                </ul>
+            </div>
+            <div class="head-nav head-nav2">
+                <ul>
+                    <li class='chose'>
+                        <p>全部评价</p>
+                        <span>204</span></li>
+                    <li>
+                        <p>好评</p>
+                        <span>200</span></li>
+                    <li>
+                        <p>中评</p>
+                        <span>2</span></li>
+                    <li>
+                        <p>差评</p>
+                        <span>2</span></li>
+                    <li>
+                        <p>有图</p>
+                        <span>68</span></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="goods-container">
+        <ul class='container'>
+            <li>
+                <div class="goods-show">
+                    <div class="goods-window">
+                        <ul>
+                            <li><img src="images/goods/info/banner1.jpg" alt=""></li>
+                        </ul>
+                        <div class="img-index"><em>1</em><em>/</em><em>7</em></div>
+                    </div>
+                </div>
+                <div class="goods-info">
+                    <div class="goods-title"><span class="goods-from">自营</span>
+                        <p>飞利浦（PHILIPS）55PUF6461/T3 55英寸 流光溢彩 4K超高清智能电视</p>
+                    </div>
+                    <div class="goods-price">
+                        <div class="price"><small>¥</small><span>3999</span><small>.00</small></div>
+                        <a href=""><span class="goods-discount">降价通知</span></a>
+                    </div>
+                    <div class="goods-secure">赠送1年意外保！再送价值399元路由器！注册路由器K码1个月后返还400元现金！
+                        <a href="">【点击查看领取返现方式！】</a></div>
+                </div>
+                <div class="sale">
+                    <div class="sale-content">
+                        <span class="lead">白条</span>
+                        <div class="sales-pro">
+                            <p>【白条支付】即享3期免息/6期息费五折</p>
+                        </div>
+                    </div>
+                    <div class="sale-content">
+                        <span class="lead">促销</span>
+                        <div class="sales-pro">
+                            <em class="icon info-more"></em>
+                            <div class="pro"><span>限制</span><a href="">此价格不与套装优惠同时享受</a></div>
+                            <div class="pro"><span>赠品</span><a href="">电视意外视意外视意外保1年（3000-4000元）（赠完即止）</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sale">
+                    <div class="sale-content">
+                        <span class="lead">已选</span>
+                        <div class="sales-pro">
+                            <em class="icon info-more"></em>
+                            <p>55英寸4K安卓流光溢彩-新款 <span class="amount">1</span><span>件</span></p>
+                        </div>
+                    </div>
+                    <div class="sale-content null">
+                        <span class="lead">延保</span>
+                        <div class="sales-pro null">
+                            <em class="icon info-more"></em>
+                        </div>
+                    </div>
+                </div>
+                <div class="goods-address">
+                    <div class="send-to">
+                        <span class="lead">送至</span>
+                        <div class="address-content">
+                            <div class="place"><span>福建</span><span>福州市</span><span>鼓楼区</span><em class="icon"></em></div>
+                            <div class="info">现货，23:00点前完成下单,预计明天(10月30日)送达</div>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <span class="lead">服务</span>
+                        <div class="address-content">
+                            <div>由京东发货并提供售后服务</div>
+                            <div class="addList">
+                                <em class="icon info-more"></em>
+                                <span><i><img src="images/icon/zhun.png" alt="">京准达</i></span>
+                                <span><i><img src="images/icon/211.png" alt="">大家电211</i></span>
+                                <span><i><img src="images/icon/free.png" alt="">货到付款</i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="msg">
+                        <span class="lead">提示</span>
+                        <div class="address-content">
+                            <div class="term">支持7天无理由退货</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="goods-brand">
+                    <a href="" class='brand-link'>
+                        <div class="brand">
+                            <img src="images/goods/info/pinpai.png" alt="">
+                            <span class='brand-title'>飞利浦电视旗舰店</span><span class='goods-from'>自营</span>
+                        </div>
+                        <div class="small-brand">飞利浦电视官方旗舰店</div>
+                        <ul>
+                            <li><span class="num">33309</span><span class='text'>关注人数</span></li>
+                            <li><span class="num">37</span><span class='text'>全部品牌</span></li>
+                            <li><span class="num">25</span><span class='text'>店铺动态</span></li>
+                        </ul>
+                    </a>
+                    <div class="goods-in">
+                        <a href='' class="call"><i class="icon"></i>联系供应商</a>
+                        <a href='' class="in"><i class="icon"></i>进入店铺</a>
+                    </div>
+                </div>
+            </li>
+            <!--商品详情页面-->
+            <li>
+                <div class="goods-content">
+                    <div class="img"><img src="images/goods/info/1.jpg" alt=""></div>
+                    <div class="img"><img src="images/goods/info/2.jpg" alt=""></div>
+                    <div class="img"><img src="images/goods/info/3.jpg" alt=""></div>
+                    <div class="img"><img src="images/goods/info/4.jpg" alt=""></div>
+                    <div class="img"><img src="images/goods/info/5.jpg" alt=""></div>
+                </div>
+            </li>
+            <li>
+                <div class="assess-container">
+                    <div class="assess assess1">
+                        <div class="assess-title">
+                            <div class="face-img"><img src="images/icon/face1.jpg" alt=""></div>
+                            <span class="user-name">j***椰</span>
+                            <span class="vip-icon vip-sliver-icon"></span>
+                            <div class="time">2016-10-29 19:39:04</div>
+                        </div>
+                        <div class="assess-content">
+                            <span class="stars">
+                                    <span class="stars star-num5"></span>
+                            </span>
+                            <div class="content">东西不错的，老婆喜欢的牌子，4k一般，就那么回事吧</div>
+                            <div class="content-img"></div>
+                            <div class="buy-time">购买日期：<span>2016-10-01 12:21:56</span></div>
+                            <div class="sort">型号：<span>55英寸4K安卓流光溢彩-新款</span></div>
+                        </div>
+                        <div class="assess-button">
+                            <ul>
+                                <li><a href=""><i class='btn-icon'></i>(<span>0</span>)</a></li>
+                                <li><a href=""><i class='btn-icon'></i>(<span>0</span>)</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="assess-container">
+                    <div class="assess assess1">
+                        <div class="assess-title">
+                            <div class="face-img"><img src="images/icon/default-face.png" alt=""></div>
+                            <span class="user-name">汪***3</span>
+                            <span class="vip-icon vip-gold-icon"></span>
+                            <div class="time">2016-10-29 13:47:48</div>
+                        </div>
+                        <div class="assess-content">
+                            <span class="stars">
+                                    <span class="stars star-num4"></span>
+                            </span>
+                            <div class="content">挺好，性价比超高，如果说分辨率的话请不要比较了，追求那些的话请直接奔大法</div>
+                            <div class="content-img"></div>
+                            <div class="buy-time">购买日期：<span>2016-10-18 21:46:06</span></div>
+                            <div class="sort">型号：<span>55英寸4K安卓流光溢彩-新款</span></div>
+                        </div>
+                        <div class="assess-button">
+                            <ul>
+                                <li><a href=""><i class='btn-icon'></i>(<span>0</span>)</a></li>
+                                <li><a href=""><i class='btn-icon'></i>(<span>0</span>)</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="assess-container">
+                    <div class="assess assess1">
+                        <div class="assess-title">
+                            <div class="face-img"><img src="images/icon/face2.jpg" alt=""></div>
+                            <span class="user-name">m***1</span>
+                            <span class="vip-icon vip-diamond-icon"></span>
+                            <div class="time">2016-10-28 16:08:34</div>
+                        </div>
+                        <div class="assess-content">
+                            <span class="stars">
+                                    <span class="stars star-num1"></span>
+                            </span>
+                            <div class="content">刚刚到货的电视就出错了。感觉这个太差了。选择的朋友慎重。物流态度还不错，京东的物流，可是这个飞利浦的牌子就自己斟酌。</div>
+                            <div class="content-img">
+                                <span class="img"><img src="images/goods/info/img1.jpg" alt=""></span>
+                                <span class="img"><img src="images/goods/info/img2.jpg" alt=""></span>
+                            </div>
+                            <div class="buy-time">购买日期：<span>2016-10-18 21:22:15</span></div>
+                            <div class="sort">型号：<span>55英寸4K安卓流光溢彩-新款</span></div>
+                        </div>
+                        <div class="assess-button">
+                            <ul>
+                                <li><a href=""><i class='btn-icon'></i>(<span>3</span>)</a></li>
+                                <li><a href=""><i class='btn-icon'></i>(<span>1</span>)</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="assess-container">
+                    <div class="assess assess1">
+                        <div class="assess-title">
+                            <div class="face-img"><img src="images/icon/face1.jpg" alt=""></div>
+                            <span class="user-name">j***椰</span>
+                            <span class="vip-icon vip-sliver-icon"></span>
+                            <div class="time">2016-10-29 19:39:04</div>
+                        </div>
+                        <div class="assess-content">
+                            <span class="stars">
+                                    <span class="stars star-num5"></span>
+                            </span>
+                            <div class="content">东西不错的，老婆喜欢的牌子，4k一般，就那么回事吧</div>
+                            <div class="content-img"></div>
+                            <div class="buy-time">购买日期：<span>2016-10-01 12:21:56</span></div>
+                            <div class="sort">型号：<span>55英寸4K安卓流光溢彩-新款</span></div>
+                        </div>
+                        <div class="assess-button">
+                            <ul>
+                                <li><a href=""><i class='btn-icon'></i>(<span>0</span>)</a></li>
+                                <li><a href=""><i class='btn-icon'></i>(<span>0</span>)</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="assess-container">
+                    <div class="assess assess1">
+                        <div class="assess-title">
+                            <div class="face-img"><img src="images/icon/default-face.png" alt=""></div>
+                            <span class="user-name">汪***3</span>
+                            <span class="vip-icon vip-gold-icon"></span>
+                            <div class="time">2016-10-29 13:47:48</div>
+                        </div>
+                        <div class="assess-content">
+                            <span class="stars">
+                                    <span class="stars star-num4"></span>
+                            </span>
+                            <div class="content">挺好，性价比超高，如果说分辨率的话请不要比较了，追求那些的话请直接奔大法</div>
+                            <div class="content-img"></div>
+                            <div class="buy-time">购买日期：<span>2016-10-18 21:46:06</span></div>
+                            <div class="sort">型号：<span>55英寸4K安卓流光溢彩-新款</span></div>
+                        </div>
+                        <div class="assess-button">
+                            <ul>
+                                <li><a href=""><i class='btn-icon'></i>(<span>0</span>)</a></li>
+                                <li><a href=""><i class='btn-icon'></i>(<span>0</span>)</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="assess-container">
+                    <div class="assess assess1">
+                        <div class="assess-title">
+                            <div class="face-img"><img src="images/icon/face2.jpg" alt=""></div>
+                            <span class="user-name">m***1</span>
+                            <span class="vip-icon vip-diamond-icon"></span>
+                            <div class="time">2016-10-28 16:08:34</div>
+                        </div>
+                        <div class="assess-content">
+                            <span class="stars">
+                                    <span class="stars star-num1"></span>
+                            </span>
+                            <div class="content">刚刚到货的电视就出错了。感觉这个太差了。选择的朋友慎重。物流态度还不错，京东的物流，可是这个飞利浦的牌子就自己斟酌。</div>
+                            <div class="content-img">
+                                <span class="img"><img src="images/goods/info/img1.jpg" alt=""></span>
+                                <span class="img"><img src="images/goods/info/img2.jpg" alt=""></span>
+                            </div>
+                            <div class="buy-time">购买日期：<span>2016-10-18 21:22:15</span></div>
+                            <div class="sort">型号：<span>55英寸4K安卓流光溢彩-新款</span></div>
+                        </div>
+                        <div class="assess-button">
+                            <ul>
+                                <li><a href=""><i class='btn-icon'></i>(<span>3</span>)</a></li>
+                                <li><a href=""><i class='btn-icon'></i>(<span>1</span>)</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="goods-info-footer">
+        <div class="footer-content-l">
+            <ul>
+                <li><a href=""><em></em><span>供应商</span></a></li>
+                <li><a href=""><em></em><span>关注</span></a></li>
+                <li><a href=""><em></em><span>购物车</span></a></li>
+            </ul>
+        </div>
+        <div class="footer-content-r">
+            <ul>
+                <li><a href="">加入购物车</a></li>
+                <li><a href="">立即购买</a></li>
+            </ul>
+        </div>
+    </div>
+    <script src="js/topNav.js"></script>
+    <script>
+        $('.goods-container').height($('.container>li').eq(0).height());
+        $('.goods-info-header .nav li').on('click', function() {
+            var index = $(this).index();
+            var lenW = $('.container li').width();
+            $('.info-head-nav').show();
+            $('.info-head-nav .head-nav').eq(index).show().siblings().hide();
+            $('.goods-info-header .nav li span').removeClass('chose');
+            $(this).find('span').addClass('chose');
+            $('.container').animate({
+                'margin-left': -index * lenW
+            }, 500, function() {
+                $('.goods-container').height($('.container>li').eq(index).height());
+            })
+        })
+        $('.head-nav li').on('click', function() {
+            $(this).addClass('chose').siblings().removeClass('chose');
+        })
+        var pH = nH = 0;
+        $(window).on('scroll', function() {
+            nH = $(this).scrollTop();
+            if (pH <= nH) {
+                $('.info-head-nav').show();
+            } else {
+                $('.info-head-nav').hide();
+            }
+            setTimeout(function() {
+                pH = nH
+            }, 0);
+        })
+    </script>
+</body>
+
+</html>

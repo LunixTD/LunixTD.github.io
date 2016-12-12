@@ -1,0 +1,337 @@
+* {
+    box-sizing: border-box;
+    -moz-user-select: none;
+}
+
+html,
+body {
+    width: 100vw;
+    max-width: 640px;
+    min-width: 320px;
+    margin: 0 auto;
+    background-color: #F3F5F7;
+}
+
+html {
+    padding-bottom: 60px;
+}
+
+body {
+    position: relative;
+}
+
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    color: #252525;
+}
+
+.go-time {
+    background-color: white;
+    width: 100%;
+}
+
+.go-time-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.go-time ul {
+    width: 100%;
+    font-size: 0;
+}
+
+.go-time ul li {
+    width: calc(100% / 5);
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+}
+
+.go-time ul li.chose p {
+    color: #f23030;
+}
+
+.go-time ul li.chose p:first-child {
+    font-size: 23px;
+}
+
+.go-time li p:first-child {
+    font-size: 17px;
+    line-height: 23px;
+    font-weight: bold;
+    margin-top: 7px;
+}
+
+.go-time li p:last-child {
+    font-size: 11px;
+    line-height: 11px;
+    margin-top: 3px;
+    margin-bottom: 8px;
+}
+
+.go-title {
+    background-color: white;
+    padding: 0 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.go-title>span {
+    font-size: 13px;
+    color: #f23030;
+}
+
+.go-title .go-end {
+    float: right;
+}
+
+.go-title .go-end>span {
+    display: inline-block;
+    color: #232326;
+    font-size: 12px;
+}
+
+.go-title .time {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 16px;
+    font-size: 0;
+}
+
+.go-title .time span {
+    text-align: center;
+    height: 16px;
+    line-height: 16px;
+    vertical-align: middle;
+    font-size: 11px;
+    overflow: hidden;
+}
+
+.go-title .time span:nth-of-type(2n+1) {
+    display: inline-block;
+    width: 16px;
+    border-radius: 2px;
+    background-color: #3d3d3d;
+    color: white;
+}
+
+.go-title .time span:nth-of-type(2n) {
+    display: inline-block;
+    width: 9px;
+}
+
+.go-time-goods {
+    padding: 0 10px;
+    background-color: white;
+    display: none;
+}
+
+.goods-content {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    min-height: 132px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+}
+
+.goods-content .img {
+    position: relative;
+    display: inline-block;
+}
+
+.goods-content img {
+    width: 102px;
+    height: 102px;
+    vertical-align: middle;
+}
+
+.img .iron {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    display: block;
+    height: 30px;
+    width: 28px;
+    font-size: 12px;
+    line-height: 12px;
+    color: white;
+    padding: 5px 5px 0 5px;
+    text-align: center;
+}
+
+.img .wearth {
+    background-color: #2DBBFC;
+}
+
+.img .hot {
+    background-color: #FF8400;
+}
+
+.img .conmend {
+    background-color: #7A44FB;
+}
+
+.img .iron:after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border-width: 7px 14px;
+    border-style: solid;
+}
+
+.img .wearth:after {
+    border-color: #2DBBFC transparent transparent transparent;
+}
+
+.img .hot:after {
+    border-color: #FF8400 transparent transparent transparent;
+}
+
+.img .conmend:after {
+    border-color: #7A44FB transparent transparent transparent;
+}
+
+.goods-content {
+    overflow: hidden;
+}
+
+.goods-content .content-r {
+    width: calc(100% - 102px);
+    float: right;
+}
+
+.content-r>p {
+    height: 32px;
+    font-size: 14px;
+    margin-bottom: 5px;
+    line-height: 16px;
+    overflow: hidden;
+    white-space: normal;
+    text-overflow: ellipsis;
+}
+
+.nprice-go {
+    margin: 29px 0 5px;
+    color: #f23030;
+    font-size: 20px;
+}
+
+.nprice-go small {
+    font-size: 12px;
+}
+
+.nprice-go .go {
+    width: 62px;
+    height: 27px;
+    line-height: 18px;
+    background-color: #f23030;
+    font-size: 14px;
+    border-radius: 2px;
+    text-align: center;
+    padding: 5px 10px;
+    float: right;
+}
+
+.nprice-go a {
+    color: white;
+}
+
+.price-progress {
+    font-size: 12px;
+    color: #848689;
+}
+
+.price-progress div {
+    display: inline-block;
+}
+
+.price-progress del {
+    position: relative;
+    top: -5px;
+}
+
+.price-progress .progress {
+    float: right;
+    font-size: 10px;
+}
+
+.progress .progress-bar {
+    display: inline-block;
+    width: 72px;
+    margin-left: 4px;
+    height: 8px;
+    overflow: hidden;
+    border: 1px solid #f23030;
+}
+
+.progress-bar em {
+    display: inline-block;
+    height: 100%;
+    background: linear-gradient(to right, #f67373, #f23434);
+    vertical-align: top;
+}
+
+.go-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 50px;
+    width: 100%;
+    background-color: white;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.go-footer ul {
+    padding: 13px 0;
+    height: 100%;
+    width: 100%;
+    font-size: 0;
+}
+
+.go-footer li {
+    display: inline-block;
+    width: 50%;
+    line-height: 24px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.go-footer li:first-child {
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.go-footer li i {
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    background: url(../images/icon/skill-icon.png);
+    background-size: 21px 82px;
+    vertical-align: middle;
+}
+
+.go-footer li:first-child i {
+    background-position: 0 -20px;
+    margin-top: -3px;
+}
+
+.go-footer li:last-child i {
+    background-position: 0 -41px;
+    margin-top: -2px;
+}
+
+.go-footer li:first-child a {
+    color: #f23030;
+}

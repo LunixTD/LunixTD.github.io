@@ -1,0 +1,68 @@
+<banner></banner>
+<div class="goods-container">
+    <div class="goods-box">
+        <div class="center-box">
+            <div class="a-title">
+                <h1>品牌制造商</h1>
+                <span>工厂直达消费者，剔除品牌溢价</span>
+                <a href="javascript:" class="more">更多制造商 ></a>
+            </div>
+            <div class="goods-content">
+                <a href="javascript:" class="box-a">
+                    <div class="mask"></div>
+                    <h2>MUJI制造商</h2>
+                    <span class="price">14.9元起</span>
+                    <div class="img"><img src="./img/goods/a1.jpg" alt="" class="scale"></div>
+                </a>
+                <a href="javascript:" class="box-a">
+                    <div class="mask"></div>
+                    <h2>Adidas制造商</h2>
+                    <span class="price">49元起</span>
+                    <div class="img"><img src="./img/goods/a2.jpg" alt="" class="scale"></div>
+                </a>
+                <a href="javascript:" class="box-b">
+                    <div class="mask"></div>
+                    <h2>膳魔师制造商</h2>
+                    <span class="price">45元起</span>
+                    <div class="img"><img src="./img/goods/a3.jpg" alt="" class="scale"></div>
+                </a>
+                <a href="javascript:" class="box-b">
+                    <div class="mask"></div>
+                    <h2>Coach制造商</h2>
+                    <span class="price">49元起</span>
+                    <div class="img"><img src="./img/goods/a4.jpg" alt="" class="scale"></div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="goods-box goods-box-main" ng-repeat="item in data">
+        <div class="center-box">
+            <div class="a-title">
+                <h1>{{item.navTitle.title}}</h1>
+                <span class="spi">{{item.navTitle.frontName}}</span>
+                <ul>
+                    <li ng-repeat="navItem in item.navTitle.nav">
+                        <a href="#/sort/{{item.navId}}#nav{{$index}}">
+                            <img src="{{navItem.img}}" alt="">
+                            <span>{{navItem.name}}</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="goods-show">
+                <ul>
+                    <li ng-repeat="goodsItem in item.goods">
+                        <a href="" class="goods">
+                            <div class="mask"></div>
+                            <div class="img"><img src="{{goodsItem.img}}" alt=""></div>
+                            <h3>{{goodsItem.name}}</h3>
+                            <p class="price">{{goodsItem.price}}</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</div>

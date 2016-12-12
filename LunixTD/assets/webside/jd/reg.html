@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/reg-log.css">
+    <script src="js/jquery-2.1.4.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="" onclick="javascript:history.back();"><span class="iconBg"></span></a>京东注册
+    </header>
+    <div class="content">
+        <div class="input code">
+            <input type="text" maxlength="4" placeholder="请输入验证码"><i class="iconBg"></i>
+            <a class="code"></a>
+        </div>
+        <div class="input phone">
+            <input type="text" maxlength="4" placeholder="请输入手机号"><i class="iconBg"></i>
+        </div>
+        <a class="sendCode">获取短信验证码</a>
+        <div class="input user"><input type="text" maxlength="4" placeholder="请输入短信验证码"><i class="iconBg"></i></div>
+        <div class="input pass">
+            <input type="password" maxlength="20" placeholder="请设置6~20位的登录密码"><i class="iconBg"></i>
+            <div class="checkbtn btn-left">
+                <span>abc</span>
+                <span>···</span>
+            </div>
+        </div>
+        <div class="notice"></div>
+        <a id="loginBtn" href="">注册</a>
+        <div class="reg-notice">注册即视为同意<a href="">《京东用户注册协议》</a></div>
+    </div>
+    <script src="js/code.js"></script>
+    <script src="js/logCheck.js"></script>
+    <script>
+        var input = $('.content .input input');
+        checkInput(input);
+    </script>
+</body>
+
+</html>
