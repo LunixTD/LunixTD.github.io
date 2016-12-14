@@ -16,7 +16,15 @@ $('.inline-box .face').on('mouseout', function() {
     $(this).siblings('.mask-bg').removeClass('mask-in')
 })
 
+//随机加载banner
+var bgNum = Math.floor(Math.random() * 4);
+$('.banner-bg').css('background-image', 'url(img/banner/banner-bg' + (bgNum + 1) + '.jpg)');
+
 // banner部分 视差处理
+// 进入页面判断导航样式状态
+if ($(document).scrollTop() != 0) {
+    $('.head-container header').addClass('un-top');
+}
 $(document).on('scroll', function() {
     if ($(document).scrollTop() > 250) {
         $('.head-container header').addClass('un-top');
