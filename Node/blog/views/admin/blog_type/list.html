@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>博客信息分类展示页面</title>
+    <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css">
+</head>
+
+<body>
+    <br>
+    <div class="container">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">博客分类信息列表</h3>
+            </div>
+            <div class="panel-body">
+                <a href="/show/addType" class="btn btn-danger pull-right">添加</a>
+                <br><br>
+                <table class="table table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th>序号</th>
+                            <th>类型名称</th>
+                            <th>描述</th>
+                            <!--<th>创建时间</th>
+                            <th>修改时间</th>-->
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{each data}}
+                        <tr>
+                            <td>{{$index+1}}</td>
+                            <td>{{$value.name}}</td>
+                            <td>{{$value.description}}</td>
+                            <!--<td>{{$value.updated_at}}</td>
+                                <td>{{$value.created_at}}</td>-->
+                            <th>
+                                <a href="/show/addType?id={{$value.id}}">修改</a>
+                                <a href="" class="delType" id="{{$value.id}}">删除</a>
+                            </th>
+                        </tr>
+                        {{/each}}
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="/lib/jquery-1.9.1.js"></script>
+    <script src="/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/js/admin/blog_type/list.js"></script>
+</body>
+
+</html>

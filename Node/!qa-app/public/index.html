@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+        }
+        
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            background-color: #333;
+        }
+        
+        a {
+            display: block;
+            text-decoration: none;
+        }
+        
+        span {
+            display: inline-block;
+        }
+        
+        h1 {
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: white;
+            font-size: 40px;
+            letter-spacing: 10px;
+            color: white;
+        }
+        
+        .container {
+            padding: 10px 50px 0;
+        }
+        
+        .content {
+            position: relative;
+            min-height: 150px;
+            margin-bottom: 20px;
+            padding: 20px 20px 0px;
+            font-size: 14px;
+            color: rgba(0, 0, 0, 0.7);
+            border-radius: 3px;
+            background-color: white;
+        }
+        
+        .content .title {
+            font-size: 15px;
+        }
+        
+        .content .foot {
+            position: absolute;
+            width: calc(100% - 20px);
+            bottom: 0;
+            left: 10px;
+            padding: 10px 20px;
+            border-top: 1px solid rgba(0, 0, 0, 0.08);
+            text-align: right;
+        }
+        
+        .foot button {
+            margin-left: 20px;
+            border: 1px solid grey;
+            color: white;
+            background-color: grey;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        
+        .foot .num {
+            width: 50px;
+            text-align: left;
+        }
+        
+        .foot .time {
+            float: left;
+            margin-top: 7px;
+        }
+        
+        .container .btn {
+            text-align: right;
+        }
+        
+        .container .button {
+            display: inline-block;
+            padding: 15px 25px;
+            border-radius: 1px;
+            letter-spacing: 2px;
+            font-size: 15px;
+            background-color: white;
+            line-height: 5px;
+            margin-bottom: 20px;
+        }
+        
+        .container .button a {
+            color: rgba(0, 0, 0, 0.8);
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>问答系统</h1>
+    <div class="container">
+        <div class="btn">
+            <div class="button"><a href="ask.html">我要提问</a></div>
+        </div>
+    </div>
+    <script id="myFirstTpl" type="text/html">
+        <a class="content" href="/detail.html?aid={{id}}">
+            <div class="title">{{title}}</div>
+            <div class="foot">
+                <span class="time">{{date}}</span><span>回答:&nbsp;</span><span class="num">{{num}}</span><button>查看详情</button>
+            </div>
+        </a>
+    </script>
+    <script src="js/jquery.js"></script>
+    <script src="assets/js/ask.js"></script>
+    <script src="assets/lib/template.js"></script>
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>

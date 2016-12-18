@@ -1,0 +1,40 @@
+{
+	"_id" : ObjectId("582c8b8cc1a26e33f08194fc"),
+	"updated_at" : ISODate("2016-11-17T00:38:36.635+08:00"),
+	"created_at" : ISODate("2016-11-17T00:38:36.635+08:00"),
+	"description" : "PS4，Xbox，WIIU，多玩，电玩巴士~",
+	"name" : "游戏",
+	"__v" : NumberInt("0")
+},
+{
+	"_id" : ObjectId("582c8c5ec1a26e33f08194fd"),
+	"updated_at" : ISODate("2016-11-17T00:42:06.329+08:00"),
+	"created_at" : ISODate("2016-11-17T00:42:06.328+08:00"),
+	"description" : "分享自己喜爱的音乐~",
+	"name" : "音乐",
+	"__v" : NumberInt("0")
+},
+{
+	"_id" : ObjectId("582c8c72c1a26e33f08194fe"),
+	"updated_at" : ISODate("2016-11-17T00:42:26.707+08:00"),
+	"created_at" : ISODate("2016-11-17T00:42:26.707+08:00"),
+	"description" : "所有与星座相关的小知识",
+	"name" : "星座",
+	"__v" : NumberInt("0")
+},
+{
+	"_id" : ObjectId("582c8c8dc1a26e33f08194ff"),
+	"updated_at" : ISODate("2016-11-17T00:42:53.516+08:00"),
+	"created_at" : ISODate("2016-11-17T00:42:53.516+08:00"),
+	"description" : "手机、平板、PC、主机等......",
+	"name" : "科技",
+	"__v" : NumberInt("0")
+},
+{
+	"_id" : ObjectId("582c8cc7c1a26e33f0819500"),
+	"updated_at" : ISODate("2016-11-17T00:43:51.367+08:00"),
+	"created_at" : ISODate("2016-11-17T00:43:51.367+08:00"),
+	"description" : "日漫日漫日漫宅宅宅！！！",
+	"name" : "动漫",
+	"__v" : NumberInt("0")
+},

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>博客信息展示页</title>
+    <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css">
+</head>
+
+<body>
+    <br>
+    <div class="container">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">博客信息展示</h3>
+            </div>
+            <div class="panel-body">
+                <form class="form-inline">
+
+                    <select name="" id="sort" class="form-control" required="required">
+                        <option id="">所有</option>
+                            {{each typeData}}
+                                <option id="{{$value.id}}" {{typeId==$value.id?'selected':''}}>{{$value.name}}</option>
+                            {{/each}}
+                    </select>
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <input type="text" name="search" id="search" class="form-control" value="" placeholder="请输入标题">
+                            <button type="button" id="searchBtn" class="btn btn-success">搜索</button>
+                        </div>
+                    </div>
+                    <a href="/show/blog_editor" class="btn btn-danger pull-right">添加</a>
+                </form>
+                <br> {{if alertMsg}}
+                <h1 style="text-align: center;color:rgba(0,0,0,0.5);border:1px solid #3333;border-radius:3px;padding:20px 30px;">未找到与"{{alertMsg}}"有关的条目</h1>
+                {{else}}
+
+                <table class="table table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th class="text-center">序号</th>
+                            <th class="text-center">标题</th>
+                            <th class="text-center">类型名称</th>
+                            <th class="text-center">描述</th>
+                            <th class="text-center">内容</th>
+                            <th class="text-center">浏览次数</th>
+                            <!--<th>创建时间</th>
+                            <th>修改时间</th>-->
+                            <th class="text-center">操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{each data}}
+                        <tr>
+                            <td class="text-center">{{$index+1}}</td>
+                            <td>{{$value.title}}</td>
+                            <td class="text-center">{{$value.type.name}}</td>
+                            <td>{{$value.description}}</td>
+                            <td>{{$value.content}}</td>
+                            <td class="text-center">{{$value.view_times}}</td>
+                            <!--<td>{{$value.updated_at}}</td>
+                                <td>{{$value.created_at}}</td>-->
+                            <th class="text-center">
+                                <a href="/show/blog_editor?id={{$value.id}}">修改</a>
+                                <a class="delBlog" id="{{$value.id}}">删除</a>
+                            </th>
+
+                        </tr>
+                        {{/each}}
+                    </tbody>
+                </table>
+                {{/if}}
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="/lib/jquery-1.9.1.js"></script>
+    <script src="/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/js/admin/blogs/list.js"></script>
+</body>
+
+</html>

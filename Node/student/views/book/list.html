@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>图书借阅系统-书籍列表</title>
+    <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse" role="navigation">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">图书借阅系统-书籍列表</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="/books/list">书籍列表</a></li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        {{if isLogined}}
+                        <a href="javascript:void(0)" onclick="logOut()" class="pull-right">
+                            {{user.name}}({{user.user_name}})&nbsp;&nbsp;<span><i class="glyphicon glyphicon-log-out"></i>[退出]</span>
+                        </a> {{else}}
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">用户中心 <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="/user/login">登陆</a></li>
+                            <li><a href="/user/reg">注册</a></li>
+                        </ul>
+                        {{/if}}
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="searchContent">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button" id="searchBtn">Go!</button>
+                        </span>
+                    </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">图书列表</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div id="mainContainer" class="row">
+                        </div>
+                        <button id="btnLoadMore" type="button" class="btn btn-block btn-danger">加载更多</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/lib/jquery-1.9.1.js"></script>
+    <script src="/lib/jquery.validate.js"></script>
+    <script src="/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/lib/messages_zh.js"></script>
+    <script src="/lib/jquery.cookie.min.js"></script>
+    <script>
+    function logOut(){
+        $.removeCookie('user_id',{path:'/'});
+        location.href='/user/login';
+    }
+    var search = '';
+        $(function(){
+            var _currentPage = 0; //当前页
+            var _isLoading = false; //是否正在加载
+            loadData()
+            $('#btnLoadMore').click(function(){
+                loadData()
+            })
+            function loadData(){
+                if(_isLoading){
+                    return false;
+                }
+
+                _currentPage += 1
+                $.ajax({
+                    method:'get',
+                    url:'/books/get_data/'+_currentPage,
+                    data:{search:search},
+                    dataType:'json',
+                    beforeSend:function(){
+                        _isLoading = true;
+                    },
+                    success:function(res){
+                        var strHtml = ""
+                        res.data.forEach(function(item){
+                            strHtml += `<div class="book-item col-sm-3">
+                                <div class="thumbnail">
+                                    <img src="${item.img}" alt="${item.title}">
+                                    <div class="caption">
+                                        <h3>${item.title.length>9?item.title.substring(0,8)+"...":item.title}</h3>
+                                        <p style="height:20px;white-space:nowrap;text-overflow:ellipsis;overflow:hidden">${item.author.length>12?item.title.substring(0,11)+"...":item.author}</p>
+                                        <p style="color:brown;">￥${item.price}元</p>   
+                                        <p>
+                                            <a href="javascript:void(0)" class="btn btn-primary" onclick="doPick('${item._id}')">借阅</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>`
+                        })
+                        $('#mainContainer').append(strHtml)
+                        console.log(res.data)
+                    },
+                    error:function(err){
+                        console.dir(err)
+                    },
+                    complete:function(){
+                        _isLoading = false;
+                    }
+                })
+            }
+            $('#searchBtn').on('click',function(){
+                $('#mainContainer').html('')
+                console.log(55)
+                var text = $('#searchContent').val();
+                search = text;
+                _currentPage = 0;
+                loadData()
+            })
+        })
+         
+        function doPick(id){
+            {{if isLogined}}
+                $.ajax({
+                    method:'post',
+                    data:{id:id},
+                    url:'/books/pick',
+                    success:function(res){
+                        alert(res.msg)
+                        console.dir(res)
+                    }
+                })
+            {{else}}
+            alert('请先登录!')
+            {{/if}}
+        }
+        
+    </script>
+</body>
+
+</html>

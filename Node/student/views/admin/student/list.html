@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>学生信息列表</title>
+    <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-10 col-sm-offset-1">
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">学生信息列表</h3>
+                    </div>
+                    <div class="panel-body">
+
+                        <a class="btn btn-danger pull-right" href="/admin/student/add" role="button">新增</a>
+                        
+                        
+                        <form action="/admin/student/list" method="GET" class="form-inline" role="form">
+                        
+                            <div class="form-group">
+                                <input type="text" name="name" value="{{query.name}}" class="form-control" placeholder="请输入姓名">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="mobile" value="{{query.mobile}}" class="form-control" placeholder="请输入手机号">
+                            </div>
+                            <button type="submit" class="btn btn-primary">查询</button>
+                        </form>
+                        
+                        
+                        <table class="table table-bordered table-hover">
+                            <thead>
+                                <tr>
+                                    <th>序号</th>
+                                    <th>姓名</th>
+                                    <th>性别</th>
+                                    <th>年龄</th>
+                                    <th>出生日期</th>
+                                    <th>手机号</th>
+                                    <th>邮箱</th>
+                                    <th>地址</th>
+                                    <th>操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {{each data}}
+                                <tr>
+                                    <td>{{$index + 1}}</td>
+                                    <td>{{$value.name}}</td>
+                                    <td>{{$value.gender}}</td>
+                                    <td>{{$value.getAge()}}</td>
+                                    <td>{{$value.getBirthday()}}</td>
+                                    <td>{{$value.mobile}}</td>
+                                    <td>{{$value.email}}</td>
+                                    <td>{{$value.address}}</td>
+                                    <td><a href="/admin/student/add/{{$value.id}}">修改</a>&nbsp;<a onclick="doDel('{{$value.id}}')">删除</a>&nbsp;<a href="/admin/student/books/{{$value.id}}">借阅记录</a></td>
+                                </tr>
+                                {{/each}}
+                            </tbody>
+                        </table>
+                        <ul class="pagination">
+                            <li><a href="/admin/student/list/1">首页</a></li>
+                            {{if page==1}}
+                            <li class="disabled"><a>上一页</a></li>
+                            {{else}}
+                            <li><a href="/admin/student/list/{{page-1}}">上一页</a></li>
+                            {{/if}} {{each pages}}
+                            <li class="{{$value==page?'active':''}}"><a href="/admin/student/list/{{$value}}">{{$value}}</a></li>
+                            {{/each}} {{if page>=pageCount}}
+                            <li class="disabled"><a href="#">下一页</a></li>
+                            {{else}}
+                            <li><a href="/admin/student/list/{{page+1}}">下一页</a></li>
+                            {{/if}}
+
+                            <li><a href="/admin/student/list/{{pageCount}}">尾页</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <form action="/admin/student/delete" id="formDel" method="POST">
+        <input type="hidden" id="idForDel" name="id">
+    </form>
+    <script src="/lib/jquery-1.9.1.js"></script>
+    <script src="/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+        function doDel(id){
+            if(confirm('是否确认删除')){
+                $('#idForDel').val(id);
+                $('#formDel').submit();
+            }
+        }
+
+        $(function(){
+            // 处理带有查询条件的分页页码链接信息
+            $('.pagination a').each(function(){
+                var temHref = $(this).attr('href')
+                if(temHref!="#" && temHref!=""){
+                    temHref += window.location.search
+                    $(this).attr('href',temHref)
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>
